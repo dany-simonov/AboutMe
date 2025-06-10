@@ -37,28 +37,32 @@ export const translations = {
         description: "Организовано Российской экономической школой и ILoveEconomics.",
         tech: ["Экономика", "Анализ", "Исследования"],
         status: "17.02.2025 – 03.05.2025",
-        highlight: "Призёр"
+        highlight: "Призёр",
+        link: "http://schoolcontest.nes.ru/"
       },
       {
-        title: "Стажировка в компании 'Спутникс' (Технопарк Сколково)",
+        title: "Стажировка в компании Спутникс (Технопарк Сколково)",
         description: "Участвовал в разных этапах разработки: программирование на XML-разметке, 3D-моделирование и печать деталей на фотополимерном 3D-принтере, веб-дизайн прототипа приложения в Figma, а также работа в центре управления полётами.",
         tech: ["XML", "3D-моделирование", "Figma", "Веб-дизайн"],
         status: "01.08.2024 – 31.08.2024",
-        highlight: "Стажировка"
+        highlight: "Стажировка",
+        link: "https://sputnix.ru/ru/"
       },
       {
         title: "StudySphere",
         description: "Образовательная платформа studysphere.volsh.org, включающая AI-ассистента на базе 13 нейросетей. Современный фронтенд на HTML, CSS, JavaScript с адаптивной версткой. Интеграция нейросетевых API для генерации и анализа текстов, создания изображений и работы с файлами. Гибкая настройка бота (язык, стиль, длина, креативность, история диалога). Разработана система квизов, учебник. Платформа бесплатна, поддерживает работу на мобильных устройствах, пользователи не ограничены в количестве запросов.",
         tech: ["HTML", "CSS", "JavaScript", "ИИ", "13 нейросетей", "API"],
-        status: "25.12.2024 – НАСТОЯЩЕЕ ВРЕМЯ",
-        highlight: "В разработке"
+        status: "25.12.2024 – 06.06.2025",
+        highlight: "В разработке",
+        link: "https://github.com/dany-simonov/SS"
       },
       {
-        title: "Shopping Copilot 'IT Purple Hack' 2025",
-        description: "AI-powered Shopping Copilot — персональный стилист для Wildberries. Интеллектуальный помощник для подбора одежды и создания стильных образов, снижая когнитивную нагрузку при онлайн-шоппинге.",
-        tech: ["AI", "Персональный стилист", "Wildberries"],
+        title: "DANO - Топ-200",
+        description: "Топ-200 из 7619 участников в национальной олимпиаде DANO по анализу данных. Анализ компаний российского сектора во время COVID-19.",
+        tech: ["Анализ данных", "Python", "Статистика"],
         status: "Участие",
-        highlight: "Fullstack + Аналитик"
+        highlight: "Топ-200",
+        link: "https://dano.hse.ru/"
       }
     ],
     
@@ -157,28 +161,32 @@ export const translations = {
         description: "Organized by Russian Economic School and ILoveEconomics.",
         tech: ["Economics", "Analysis", "Research"],
         status: "17.02.2025 – 03.05.2025",
-        highlight: "Winner"
+        highlight: "Winner",
+        link: "http://schoolcontest.nes.ru/"
       },
       {
-        title: "Internship at 'Sputniks' Company (Skolkovo Technopark)",
+        title: "Internship at Sputnix Company (Skolkovo Technopark)",
         description: "Participated in various development stages: XML markup programming, 3D modeling and printing parts on photopolymer 3D printer, web design of application prototype in Figma, as well as work in the flight control center.",
         tech: ["XML", "3D Modeling", "Figma", "Web Design"],
         status: "01.08.2024 – 31.08.2024",
-        highlight: "Internship"
+        highlight: "Internship",
+        link: "https://sputnix.ru/ru/"
       },
       {
         title: "StudySphere",
         description: "Educational platform studysphere.volsh.org, including AI assistant based on 13 neural networks. Modern frontend in HTML, CSS, JavaScript with responsive layout. Integration of neural network APIs for text generation and analysis, image creation and file processing. Flexible bot settings (language, style, length, creativity, dialogue history). Developed quiz system, textbook. Platform is free, supports mobile devices, users are not limited in number of requests.",
         tech: ["HTML", "CSS", "JavaScript", "AI", "13 Neural Networks", "API"],
-        status: "25.12.2024 – PRESENT",
-        highlight: "In Development"
+        status: "25.12.2024 – 06.06.2025",
+        highlight: "In Development",
+        link: "https://github.com/dany-simonov/SS"
       },
       {
-        title: "Shopping Copilot 'IT Purple Hack' 2025",
-        description: "AI-powered Shopping Copilot — personal stylist for Wildberries. Intelligent assistant for clothing selection and creating stylish looks, reducing cognitive load when online shopping.",
-        tech: ["AI", "Personal Stylist", "Wildberries"],
+        title: "DANO - Top 200",
+        description: "Top 200 out of 7619 participants in DANO National Data Analysis Olympiad. Analysis of Russian sector companies during COVID-19.",
+        tech: ["Data Analysis", "Python", "Statistics"],
         status: "Participation",
-        highlight: "Fullstack + Analyst"
+        highlight: "Top 200",
+        link: "https://dano.hse.ru/"
       }
     ],
     

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Mail, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -161,7 +160,16 @@ const Index = () => {
                       <span className="text-sm text-muted-foreground">
                         {language === 'ru' ? 'Статус:' : 'Status:'} {project.status}
                       </span>
-                      <ExternalLink className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
+                      {project.link && (
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="opacity-50 group-hover:opacity-100 transition-opacity"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
@@ -349,3 +357,5 @@ const Index = () => {
 };
 
 export default Index;
+
+```
