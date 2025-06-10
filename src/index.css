@@ -48,13 +48,13 @@
   }
 
   .light {
-    --background: 0 0% 100%;
+    --background: 240 100% 98%;
     --foreground: 240 10% 3.9%;
 
-    --card: 0 0% 100%;
+    --card: 240 100% 99%;
     --card-foreground: 240 10% 3.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 240 100% 99%;
     --popover-foreground: 240 10% 3.9%;
 
     --primary: 142.1 76.2% 36.3%;
@@ -76,7 +76,7 @@
     --input: 240 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 240 100% 99%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -100,6 +100,16 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Light theme specific overrides */
+  .light body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%, #f8fafc 100%);
+  }
+
+  .light footer {
+    background: rgba(100, 116, 139, 0.1) !important;
+    border-color: rgba(100, 116, 139, 0.2) !important;
+  }
 }
 
 @layer components {
@@ -109,6 +119,10 @@
 
   .glass-card {
     @apply backdrop-blur-md bg-white/10 dark:bg-black/10 border border-white/20 dark:border-white/10;
+  }
+
+  .light .glass-card {
+    @apply bg-white/60 border-gray-200;
   }
 
   .glow-border {

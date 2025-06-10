@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Mail, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -179,43 +178,27 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Experience Section */}
+        {/* Experience Section - Updated to grid layout */}
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
               <span className="gradient-text">{t.experienceAchievements}</span>
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Award className="h-12 w-12 mx-auto mb-4 text-yellow-500" />
-                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[0].title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.experienceCards[0].description}
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Zap className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[1].title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.experienceCards[1].description}
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Code className="h-12 w-12 mx-auto mb-4 text-blue-500" />
-                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[2].title}</h3>
-                  <p className="text-muted-foreground">
-                    {t.experienceCards[2].description}
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {t.experienceCards.map((achievement, index) => (
+                <Card key={index} className="glass-card text-center hover:scale-105 transition-all duration-300">
+                  <CardContent className="p-4">
+                    <div className="h-10 w-10 mx-auto mb-3 flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 rounded-full">
+                      <Award className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-sm font-bold mb-2">{achievement.title}</h3>
+                    <p className="text-xs text-muted-foreground">
+                      {achievement.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
@@ -250,7 +233,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Skills Grid */}
+        {/* Skills Grid - Updated categories */}
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
@@ -270,7 +253,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <Database className="h-12 w-12 mx-auto mb-4 text-green-500" />
                   <h3 className="font-bold mb-2">{t.dataAnalytics}</h3>
-                  <p className="text-sm text-muted-foreground">Pandas, NumPy, SQL, Power BI</p>
+                  <p className="text-sm text-muted-foreground">Pandas, NumPy, SQL, Power BI, Tableau, Plotly</p>
                 </CardContent>
               </Card>
               
@@ -285,8 +268,8 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Palette className="h-12 w-12 mx-auto mb-4 text-pink-500" />
-                  <h3 className="font-bold mb-2">{t.designAnd3D}</h3>
-                  <p className="text-sm text-muted-foreground">Figma, {language === 'ru' ? '3D-моделирование' : '3D Modeling'}, UI/UX</p>
+                  <h3 className="font-bold mb-2">{t.webDesign}</h3>
+                  <p className="text-sm text-muted-foreground">Figma, {language === 'ru' ? 'Создание прототипов' : 'Prototyping'}, UI/UX</p>
                 </CardContent>
               </Card>
             </div>

@@ -21,13 +21,13 @@ export const translations = {
     
     // Skills categories
     programming: "Программирование",
-    dataAnalytics: "Данные и аналитика",
+    dataAnalytics: "Анализ данных",
     webDevelopment: "Веб-разработка",
-    designAnd3D: "Дизайн и 3D",
+    webDesign: "Веб-дизайн",
     
     // Skills
     skills: [
-      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'Vue.js', 'React', 'SQL', 'A/B-тестирование', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-тесты', 'T-тесты', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML разметка', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
+      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'React', 'SQL', 'A/B-тестирование', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Plotly', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-тесты', 'T-тесты', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML разметка', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
     ],
     
     // Projects
@@ -66,19 +66,43 @@ export const translations = {
       }
     ],
     
-    // Experience cards
+    // Experience cards - все достижения из GitHub
     experienceCards: [
       {
-        title: "Топ-200",
-        description: "Из 7619 участников в национальной олимпиаде DANO по анализу данных"
+        title: "DANO - Топ-200",
+        description: "Из 7619 участников в олимпиаде по анализу данных"
       },
       {
-        title: "Участие в хакатонах",
-        description: "Множественное участие в хакатонах включая Т-Банк, Purple Hack и Nuclear IT"
+        title: "Purple Hack 2025",
+        description: "Участие в хакатоне по созданию IT-решений"
       },
       {
-        title: "Fullstack-разработчик",
-        description: "Опыт во фронтенд и бэкенд разработке с современными технологиями"
+        title: "T-Bank Хакатон",
+        description: "Разработка финтех решений"
+      },
+      {
+        title: "Nuclear IT Хакатон",
+        description: "Создание решений для атомной отрасли"
+      },
+      {
+        title: "Призёр РЭШ по экономике",
+        description: "XVI Международный школьный конкурс"
+      },
+      {
+        title: "Стажировка Спутникс",
+        description: "Технопарк Сколково, разработка и 3D-печать"
+      },
+      {
+        title: "ФКН ВШЭ программы",
+        description: "Летняя и зимняя школа программной инженерии"
+      },
+      {
+        title: "Яндекс.Лицей",
+        description: "Промышленное программирование на Python"
+      },
+      {
+        title: "IT-конференции",
+        description: "RUCODE, Purple Conf, MTS Tech Day, Яндекс Conf"
       }
     ],
     
@@ -145,13 +169,13 @@ export const translations = {
     
     // Skills categories
     programming: "Programming",
-    dataAnalytics: "Data & Analytics",
+    dataAnalytics: "Data Analysis",
     webDevelopment: "Web Development",
-    designAnd3D: "Design & 3D",
+    webDesign: "Web Design",
     
     // Skills
     skills: [
-      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'Vue.js', 'React', 'SQL', 'A/B Testing', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-tests', 'T-tests', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML markup', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
+      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'React', 'SQL', 'A/B Testing', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Plotly', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-tests', 'T-tests', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML markup', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
     ],
     
     // Projects
@@ -190,19 +214,43 @@ export const translations = {
       }
     ],
     
-    // Experience cards
+    // Experience cards - все достижения из GitHub
     experienceCards: [
       {
-        title: "Top 200",
-        description: "Out of 7619 participants in DANO National Data Analysis Olympiad"
+        title: "DANO - Top 200",
+        description: "Out of 7619 participants in data analysis olympiad"
       },
       {
-        title: "Hackathon Participant",
-        description: "Multiple hackathon participations including T-Bank, Purple Hack, and Nuclear IT"
+        title: "Purple Hack 2025",
+        description: "Participation in IT solutions hackathon"
       },
       {
-        title: "Full-Stack Dev",
-        description: "Experienced in both frontend and backend development with modern technologies"
+        title: "T-Bank Hackathon",
+        description: "Developing fintech solutions"
+      },
+      {
+        title: "Nuclear IT Hackathon",
+        description: "Creating solutions for nuclear industry"
+      },
+      {
+        title: "Economics Competition Winner",
+        description: "XVI International School Competition"
+      },
+      {
+        title: "Sputnix Internship",
+        description: "Skolkovo Technopark, development and 3D printing"
+      },
+      {
+        title: "FCS HSE Programs",
+        description: "Summer and winter programming engineering school"
+      },
+      {
+        title: "Yandex Lyceum",
+        description: "Industrial Python Programming"
+      },
+      {
+        title: "IT Conferences",
+        description: "RUCODE, Purple Conf, MTS Tech Day, Yandex Conf"
       }
     ],
     
@@ -218,15 +266,15 @@ export const translations = {
         period: "19.09.2024 - 15.04.2025"
       },
       {
-        institution: "Summer School of Programming Engineering - FKN NIU HSE",
+        institution: "Summer School of Programming Engineering - FCS HSE",
         period: "01.07.2024 - 12.07.2024"
       },
       {
-        institution: "Data Analysis Megaintensive - FKN NIU HSE",
+        institution: "Data Analysis Megaintensive - FCS HSE",
         period: "14.04.2024 - 21.04.2024"
       },
       {
-        institution: "Winter School of Programming Engineering - FKN NIU HSE",
+        institution: "Winter School of Programming Engineering - FCS HSE",
         period: "24.02.2024 - 29.02.2024"
       },
       {
