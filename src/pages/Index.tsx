@@ -3,9 +3,14 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Mail, Phone, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import LanguageToggle from '@/components/LanguageToggle';
+import { translations } from '@/data/translations';
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [language, setLanguage] = useState<'ru' | 'en'>('ru');
+
+  const t = translations[language];
 
   useEffect(() => {
     if (darkMode) {
@@ -15,66 +20,12 @@ const Index = () => {
     }
   }, [darkMode]);
 
-  const skills = [
-    'Python', 'Data Analysis', 'Machine Learning', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SQL', 'MySQL', 'SQLite',
-    'JavaScript', 'HTML', 'CSS', 'React', 'Flask', 'bs4', 'requests', 'PyQt5', 'Microsoft Office', 'Power BI', 'Tableau',
-    'Figma', 'XML Parsing', '3D Modeling', 'Photopolymer 3D Printing', 'Web Design', 'Mobile Development', 'API Integration'
-  ];
-
-  const projects = [
-    {
-      title: "StudySphere Educational Platform",
-      description: "AI-powered educational platform with 13 neural networks, frontend in HTML/CSS/JS, backend integration, and mobile support",
-      tech: ["HTML", "CSS", "JavaScript", "AI", "Neural Networks"],
-      status: "Active Development",
-      highlight: "AI-Assistant Integration"
-    },
-    {
-      title: "DANO Data Analysis Olympiad",
-      description: "Top 200 out of 7619 participants in national data analysis olympiad",
-      tech: ["Python", "Data Analysis", "Statistics"],
-      status: "Achievement",
-      highlight: "Top 200/7619"
-    },
-    {
-      title: "T-Bank Hackathon Winner",
-      description: "Web developer and UI/UX designer for restaurant bill splitting app",
-      tech: ["Web Development", "UI/UX", "React"],
-      status: "Completed",
-      highlight: "Hackathon Winner"
-    },
-    {
-      title: "IT Purple Hack",
-      description: "Product analyst developing CLTV system for client retention",
-      tech: ["Analytics", "CLTV", "Business Intelligence"],
-      status: "Completed",
-      highlight: "Product Analytics"
-    }
-  ];
-
-  const education = [
-    {
-      institution: "School №2123 named after Migel Erlandess",
-      program: "11th grade Mathematical Vertical Plus",
-      period: "Current"
-    },
-    {
-      institution: "Industrial Programming (Python) - Yandex Lyceum",
-      period: "19.09.2024 - 15.04.2025"
-    },
-    {
-      institution: "Summer School of Programming Engineering - FKN NIU HSE",
-      period: "01.07.2024 - 12.07.2024"
-    },
-    {
-      institution: "Data Analysis Megaintensive - FKN NIU HSE",
-      period: "14.04.2024 - 21.04.2024"
-    },
-    {
-      institution: "Winter School of Programming Engineering - FKN NIU HSE",
-      period: "24.02.2024 - 29.02.2024"
-    }
-  ];
+  useEffect(() => {
+    document.documentElement.lang = language;
+    document.title = language === 'ru' 
+      ? "Даниил Симонов - Fullstack-разработчик и Аналитик данных"
+      : "Daniil Simonov - Full-Stack Developer & Data Analyst";
+  }, [language]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-foreground relative overflow-x-hidden">
@@ -91,16 +42,19 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="font-bold text-xl gradient-text">
-            Daniil Simonov
+            {t.name}
           </div>
-          <Button
-            variant="outline"
-            size="icon"
-            onClick={() => setDarkMode(!darkMode)}
-            className="glass-card border-white/20 hover:bg-white/10"
-          >
-            {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </Button>
+          <div className="flex items-center gap-3">
+            <LanguageToggle language={language} onLanguageChange={setLanguage} />
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setDarkMode(!darkMode)}
+              className="glass-card border-white/20 hover:bg-white/10"
+            >
+              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -113,22 +67,21 @@ const Index = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 rounded-full blur-md opacity-75 animate-glow"></div>
                 <img 
                   src="/lovable-uploads/3d998283-9685-472e-9b4f-f844d8350953.png"
-                  alt="Daniil Simonov"
+                  alt={t.name}
                   className="relative w-full h-full object-cover rounded-full border-4 border-white/20"
                 />
               </div>
               
               <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                <span className="gradient-text">Daniil Simonov</span>
+                <span className="gradient-text">{t.name}</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-                17 years old • Moscow
+                {t.age} • {t.location}
               </p>
               
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Data Analyst & Full-Stack Developer passionate about creating innovative solutions 
-                with Python, Machine Learning, and modern web technologies
+                {t.description}
               </p>
 
               <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -141,13 +94,13 @@ const Index = () => {
                 <Button asChild variant="outline" className="glass-card">
                   <a href="mailto:dany.ssimon2007@yandex.ru">
                     <Mail className="mr-2 h-4 w-4" />
-                    Contact
+                    {t.contact}
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="glass-card">
                   <a href="tel:+79013874945">
                     <Phone className="mr-2 h-4 w-4" />
-                    Call
+                    {t.call}
                   </a>
                 </Button>
               </div>
@@ -159,7 +112,7 @@ const Index = () => {
         <section className="py-12 border-y border-border/50 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-green-500/10">
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll-x">
-              {[...skills, ...skills].map((skill, index) => (
+              {[...t.skills, ...t.skills].map((skill, index) => (
                 <div key={index} className="flex-shrink-0 mx-8">
                   <span className="text-lg font-semibold text-primary whitespace-nowrap">
                     {skill}
@@ -174,11 +127,11 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              <span className="gradient-text">Featured Projects</span>
+              <span className="gradient-text">{t.featuredProjects}</span>
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((project, index) => (
+              {t.projects.map((project, index) => (
                 <Card key={index} className="glass-card hover:scale-105 transition-all duration-300 group">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between mb-4">
@@ -204,7 +157,7 @@ const Index = () => {
                     
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-muted-foreground">
-                        Status: {project.status}
+                        {language === 'ru' ? 'Статус:' : 'Status:'} {project.status}
                       </span>
                       <ExternalLink className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
                     </div>
@@ -219,16 +172,16 @@ const Index = () => {
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              <span className="gradient-text">Experience & Achievements</span>
+              <span className="gradient-text">{t.experienceAchievements}</span>
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Award className="h-12 w-12 mx-auto mb-4 text-yellow-500" />
-                  <h3 className="text-2xl font-bold mb-2">Top 200</h3>
+                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[0].title}</h3>
                   <p className="text-muted-foreground">
-                    Out of 7619 participants in DANO National Data Analysis Olympiad
+                    {t.experienceCards[0].description}
                   </p>
                 </CardContent>
               </Card>
@@ -236,9 +189,9 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Zap className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <h3 className="text-2xl font-bold mb-2">Hackathon Winner</h3>
+                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[1].title}</h3>
                   <p className="text-muted-foreground">
-                    Multiple hackathon victories including T-Bank, Purple Hack, and Nuclear IT
+                    {t.experienceCards[1].description}
                   </p>
                 </CardContent>
               </Card>
@@ -246,9 +199,9 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Code className="h-12 w-12 mx-auto mb-4 text-blue-500" />
-                  <h3 className="text-2xl font-bold mb-2">Full-Stack Dev</h3>
+                  <h3 className="text-2xl font-bold mb-2">{t.experienceCards[2].title}</h3>
                   <p className="text-muted-foreground">
-                    Experienced in both frontend and backend development with modern technologies
+                    {t.experienceCards[2].description}
                   </p>
                 </CardContent>
               </Card>
@@ -260,11 +213,11 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              <span className="gradient-text">Education</span>
+              <span className="gradient-text">{t.education}</span>
             </h2>
             
             <div className="max-w-4xl mx-auto space-y-6">
-              {education.map((edu, index) => (
+              {t.educationData.map((edu, index) => (
                 <Card key={index} className="glass-card hover:scale-105 transition-all duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-start justify-between">
@@ -290,14 +243,14 @@ const Index = () => {
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              <span className="gradient-text">Technical Skills</span>
+              <span className="gradient-text">{t.technicalSkills}</span>
             </h2>
             
             <div className="grid md:grid-cols-4 gap-8">
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Code className="h-12 w-12 mx-auto mb-4 text-blue-500" />
-                  <h3 className="font-bold mb-2">Programming</h3>
+                  <h3 className="font-bold mb-2">{t.programming}</h3>
                   <p className="text-sm text-muted-foreground">Python, JavaScript, HTML, CSS</p>
                 </CardContent>
               </Card>
@@ -305,7 +258,7 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Database className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                  <h3 className="font-bold mb-2">Data & Analytics</h3>
+                  <h3 className="font-bold mb-2">{t.dataAnalytics}</h3>
                   <p className="text-sm text-muted-foreground">Pandas, NumPy, SQL, Power BI</p>
                 </CardContent>
               </Card>
@@ -313,7 +266,7 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Globe className="h-12 w-12 mx-auto mb-4 text-purple-500" />
-                  <h3 className="font-bold mb-2">Web Development</h3>
+                  <h3 className="font-bold mb-2">{t.webDevelopment}</h3>
                   <p className="text-sm text-muted-foreground">React, Flask, APIs</p>
                 </CardContent>
               </Card>
@@ -321,8 +274,8 @@ const Index = () => {
               <Card className="glass-card text-center">
                 <CardContent className="p-6">
                   <Palette className="h-12 w-12 mx-auto mb-4 text-pink-500" />
-                  <h3 className="font-bold mb-2">Design & 3D</h3>
-                  <p className="text-sm text-muted-foreground">Figma, 3D Modeling, UI/UX</p>
+                  <h3 className="font-bold mb-2">{t.designAnd3D}</h3>
+                  <p className="text-sm text-muted-foreground">Figma, {language === 'ru' ? '3D-моделирование' : '3D Modeling'}, UI/UX</p>
                 </CardContent>
               </Card>
             </div>
@@ -333,11 +286,11 @@ const Index = () => {
         <section className="py-20">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="gradient-text">Let's Connect</span>
+              <span className="gradient-text">{t.letsConnect}</span>
             </h2>
             
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Ready to work on exciting projects together? Let's discuss how we can create something amazing.
+              {t.connectDescription}
             </p>
             
             <div className="flex flex-wrap justify-center gap-6">
@@ -345,9 +298,9 @@ const Index = () => {
                 <CardContent className="p-6 flex items-center">
                   <Mail className="h-6 w-6 mr-3 text-primary" />
                   <div className="text-left">
-                    <p className="font-semibold">Email</p>
+                    <p className="font-semibold">{t.contactCards[0].label}</p>
                     <a href="mailto:dany.ssimon2007@yandex.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                      dany.ssimon2007@yandex.ru
+                      {t.contactCards[0].value}
                     </a>
                   </div>
                 </CardContent>
@@ -357,9 +310,9 @@ const Index = () => {
                 <CardContent className="p-6 flex items-center">
                   <Phone className="h-6 w-6 mr-3 text-primary" />
                   <div className="text-left">
-                    <p className="font-semibold">Phone</p>
+                    <p className="font-semibold">{t.contactCards[1].label}</p>
                     <a href="tel:+79013874945" className="text-muted-foreground hover:text-primary transition-colors">
-                      +7 901 387 49 45
+                      {t.contactCards[1].value}
                     </a>
                   </div>
                 </CardContent>
@@ -369,8 +322,8 @@ const Index = () => {
                 <CardContent className="p-6 flex items-center">
                   <MapPin className="h-6 w-6 mr-3 text-primary" />
                   <div className="text-left">
-                    <p className="font-semibold">Location</p>
-                    <p className="text-muted-foreground">Moscow, Russia</p>
+                    <p className="font-semibold">{t.contactCards[2].label}</p>
+                    <p className="text-muted-foreground">{t.contactCards[2].value}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -381,11 +334,8 @@ const Index = () => {
         {/* Footer */}
         <footer className="py-12 border-t border-border/50 bg-background/50">
           <div className="container mx-auto px-6 text-center">
-            <p className="text-muted-foreground mb-4">
-              Built with React, TypeScript, and Tailwind CSS
-            </p>
             <p className="text-sm text-muted-foreground">
-              © 2024 Daniil Simonov. All rights reserved.
+              {t.footerText}
             </p>
           </div>
         </footer>
