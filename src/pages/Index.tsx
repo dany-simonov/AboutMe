@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Github, Mail, Phone, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
+import { Moon, Sun, Github, Mail, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import LanguageToggle from '@/components/LanguageToggle';
@@ -66,7 +66,7 @@ const Index = () => {
               <div className="w-48 h-48 mx-auto mb-8 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 rounded-full blur-md opacity-75 animate-glow"></div>
                 <img 
-                  src="/lovable-uploads/3d998283-9685-472e-9b4f-f844d8350953.png"
+                  src="/lovable-uploads/4fde7527-9e75-4a2c-b56a-4e33a2a94a31.png"
                   alt={t.name}
                   className="relative w-full h-full object-cover rounded-full border-4 border-white/20"
                 />
@@ -86,9 +86,11 @@ const Index = () => {
 
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 <Button asChild className="glass-card glow-border">
-                  <a href="https://github.com/dany-simonov" target="_blank" rel="noopener noreferrer">
-                    <Github className="mr-2 h-4 w-4" />
-                    GitHub
+                  <a href="https://t.me/dany_simonov" target="_blank" rel="noopener noreferrer">
+                    <svg className="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.614 7.608c-.121.567-.444.708-.895.442l-2.468-1.82-1.191 1.146c-.132.132-.243.243-.497.243l.177-2.506 4.582-4.14c.199-.177-.043-.275-.309-.098L9.67 11.854l-2.468-.77c-.537-.168-.546-.537.113-.794l9.64-3.715c.447-.168.84.105.693.785z"/>
+                    </svg>
+                    Telegram
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="glass-card">
@@ -98,9 +100,9 @@ const Index = () => {
                   </a>
                 </Button>
                 <Button asChild variant="outline" className="glass-card">
-                  <a href="tel:+79013874945">
-                    <Phone className="mr-2 h-4 w-4" />
-                    {t.call}
+                  <a href="https://github.com/dany-simonov" target="_blank" rel="noopener noreferrer">
+                    <Github className="mr-2 h-4 w-4" />
+                    GitHub
                   </a>
                 </Button>
               </div>
@@ -296,11 +298,13 @@ const Index = () => {
             <div className="flex flex-wrap justify-center gap-6">
               <Card className="glass-card">
                 <CardContent className="p-6 flex items-center">
-                  <Mail className="h-6 w-6 mr-3 text-primary" />
+                  <svg className="h-6 w-6 mr-3 text-primary" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.614 7.608c-.121.567-.444.708-.895.442l-2.468-1.82-1.191 1.146c-.132.132-.243.243-.497.243l.177-2.506 4.582-4.14c.199-.177-.043-.275-.309-.098L9.67 11.854l-2.468-.77c-.537-.168-.546-.537.113-.794l9.64-3.715c.447-.168.84.105.693.785z"/>
+                  </svg>
                   <div className="text-left">
-                    <p className="font-semibold">{t.contactCards[0].label}</p>
-                    <a href="mailto:dany.ssimon2007@yandex.ru" className="text-muted-foreground hover:text-primary transition-colors">
-                      {t.contactCards[0].value}
+                    <p className="font-semibold">Telegram</p>
+                    <a href="https://t.me/dany_simonov" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      @dany_simonov
                     </a>
                   </div>
                 </CardContent>
@@ -308,11 +312,11 @@ const Index = () => {
               
               <Card className="glass-card">
                 <CardContent className="p-6 flex items-center">
-                  <Phone className="h-6 w-6 mr-3 text-primary" />
+                  <Mail className="h-6 w-6 mr-3 text-primary" />
                   <div className="text-left">
-                    <p className="font-semibold">{t.contactCards[1].label}</p>
-                    <a href="tel:+79013874945" className="text-muted-foreground hover:text-primary transition-colors">
-                      {t.contactCards[1].value}
+                    <p className="font-semibold">{t.contactCards[0].label}</p>
+                    <a href="mailto:dany.ssimon2007@yandex.ru" className="text-muted-foreground hover:text-primary transition-colors">
+                      {t.contactCards[0].value}
                     </a>
                   </div>
                 </CardContent>

@@ -7,18 +7,17 @@ export const translations = {
     // Hero section
     age: "17 лет",
     location: "Москва",
-    description: "Аналитик данных и Fullstack-разработчик, увлеченный созданием инновационных решений с использованием Python, машинного обучения и современных веб-технологий",
+    description: "Привет! Меня зовут Даня, и я увлечен миром технологий и анализа данных. Я стремлюсь применять свои знания в разработке интересных проектов и решении сложных задач. Мне нравится анализ данных, разработка веб-приложений, создание AI-ассистентов и многое другое. Я постоянно учусь новому и готов к совместной работе.",
     
     // Navigation/Buttons
     contact: "Связаться",
-    call: "Позвонить",
     
     // Sections
-    featuredProjects: "Избранные проекты",
-    experienceAchievements: "Опыт и достижения",
+    featuredProjects: "Проекты и достижения",
+    experienceAchievements: "Хакатоны и олимпиады",
     education: "Образование",
     technicalSkills: "Технические навыки",
-    letsConnect: "Давайте знакомиться",
+    letsConnect: "Контакт",
     
     // Skills categories
     programming: "Программирование",
@@ -28,41 +27,38 @@ export const translations = {
     
     // Skills
     skills: [
-      'Python', 'Анализ данных', 'Машинное обучение', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SQL', 'MySQL', 'SQLite',
-      'JavaScript', 'HTML', 'CSS', 'React', 'Flask', 'bs4', 'requests', 'PyQt5', 'Microsoft Office', 'Power BI', 'Tableau',
-      'Figma', 'XML парсинг', '3D-моделирование', 'Фотополимерная 3D-печать', 'Веб-дизайн', 'Мобильная разработка', 'API интеграция',
-      'Git', 'GitHub', 'Docker', 'A/B-тестирование', 'FastAPI', 'Vue.js', 'Голосовые ассистенты', 'Интеграция ИИ'
+      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'Vue.js', 'React', 'SQL', 'A/B-тестирование', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-тесты', 'T-тесты', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML разметка', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
     ],
     
     // Projects
     projects: [
       {
-        title: "StudySphere - Образовательная платформа",
-        description: "Образовательная платформа с ИИ-ассистентом на базе 13 нейросетей, современный фронтенд на HTML/CSS/JS, интеграция API и мобильная поддержка",
-        tech: ["HTML", "CSS", "JavaScript", "ИИ", "Нейросети"],
-        status: "В разработке",
-        highlight: "Интеграция ИИ-ассистента"
+        title: "Призёр XVI Международного школьного конкурса РЭШ по экономике",
+        description: "Организовано Российской экономической школой и ILoveEconomics.",
+        tech: ["Экономика", "Анализ", "Исследования"],
+        status: "17.02.2025 – 03.05.2025",
+        highlight: "Призёр"
       },
       {
-        title: "Олимпиада DANO по анализу данных",
-        description: "Топ-200 из 7619 участников в национальной олимпиаде по анализу данных",
-        tech: ["Python", "Анализ данных", "Статистика"],
-        status: "Достижение",
-        highlight: "Топ-200/7619"
+        title: "Стажировка в компании 'Спутникс' (Технопарк Сколково)",
+        description: "Участвовал в разных этапах разработки: программирование на XML-разметке, 3D-моделирование и печать деталей на фотополимерном 3D-принтере, веб-дизайн прототипа приложения в Figma, а также работа в центре управления полётами.",
+        tech: ["XML", "3D-моделирование", "Figma", "Веб-дизайн"],
+        status: "01.08.2024 – 31.08.2024",
+        highlight: "Стажировка"
       },
       {
-        title: "Победитель хакатона Т-Банка",
-        description: "Веб-разработчик и UI/UX дизайнер приложения для разделения счетов в ресторанах",
-        tech: ["Веб-разработка", "UI/UX", "React"],
-        status: "Завершен",
-        highlight: "Победитель хакатона"
+        title: "StudySphere",
+        description: "Образовательная платформа studysphere.volsh.org, включающая AI-ассистента на базе 13 нейросетей. Современный фронтенд на HTML, CSS, JavaScript с адаптивной версткой. Интеграция нейросетевых API для генерации и анализа текстов, создания изображений и работы с файлами. Гибкая настройка бота (язык, стиль, длина, креативность, история диалога). Разработана система квизов, учебник. Платформа бесплатна, поддерживает работу на мобильных устройствах, пользователи не ограничены в количестве запросов.",
+        tech: ["HTML", "CSS", "JavaScript", "ИИ", "13 нейросетей", "API"],
+        status: "25.12.2024 – НАСТОЯЩЕЕ ВРЕМЯ",
+        highlight: "В разработке"
       },
       {
-        title: "IT Purple Hack",
-        description: "Продуктовый аналитик, разрабатывающий CLTV систему для удержания клиентов",
-        tech: ["Аналитика", "CLTV", "Бизнес-аналитика"],
-        status: "Завершен",
-        highlight: "Продуктовая аналитика"
+        title: "Shopping Copilot 'IT Purple Hack' 2025",
+        description: "AI-powered Shopping Copilot — персональный стилист для Wildberries. Интеллектуальный помощник для подбора одежды и создания стильных образов, снижая когнитивную нагрузку при онлайн-шоппинге.",
+        tech: ["AI", "Персональный стилист", "Wildberries"],
+        status: "Участие",
+        highlight: "Fullstack + Аналитик"
       }
     ],
     
@@ -73,8 +69,8 @@ export const translations = {
         description: "Из 7619 участников в национальной олимпиаде DANO по анализу данных"
       },
       {
-        title: "Победитель хакатонов",
-        description: "Множественные победы в хакатонах включая Т-Банк, Purple Hack и Nuclear IT"
+        title: "Участие в хакатонах",
+        description: "Множественное участие в хакатонах включая Т-Банк, Purple Hack и Nuclear IT"
       },
       {
         title: "Fullstack-разработчик",
@@ -104,11 +100,16 @@ export const translations = {
       {
         institution: "Зимняя школа программной инженерии - ФКН НИУ ВШЭ",
         period: "24.02.2024 - 29.02.2024"
+      },
+      {
+        institution: "Конференции: RUCODE, Purple Conf, MTS True Tech Day, Яндекс Conf",
+        program: "Лекции и участие",
+        period: "2024-2025"
       }
     ],
     
     // Contact
-    connectDescription: "Готов работать над интересными проектами вместе? Давайте обсудим, как мы можем создать что-то потрясающее.",
+    connectDescription: "Если ты хочешь обсудить проект, дать совет, задать вопрос или просто поболтать, вот как со мной можно связаться. Я всегда открыт к интересным проектам и новым знакомствам. Если есть идеи, предложения или просто хочется пообщаться - пиши! Буду рад обсудить.",
     contactCards: [
       { label: "Email", value: "dany.ssimon2007@yandex.ru" },
       { label: "Телефон", value: "+7 901 387 49 45" },
@@ -116,7 +117,7 @@ export const translations = {
     ],
     
     // Footer
-    footerText: "© 2024 Даниил Симонов. Все права защищены."
+    footerText: "© 2024-2025 Симонов Даниил. Все права защищены."
   },
   
   en: {
@@ -126,18 +127,17 @@ export const translations = {
     // Hero section
     age: "17 years old",
     location: "Moscow",
-    description: "Data Analyst & Full-Stack Developer passionate about creating innovative solutions with Python, Machine Learning, and modern web technologies",
+    description: "Hi! My name is Daniil, and I'm passionate about the world of technology and data analysis. I strive to apply my knowledge in developing interesting projects and solving complex problems. I enjoy data analysis, web application development, creating AI assistants, and much more. I'm constantly learning new things and ready for collaboration.",
     
     // Navigation/Buttons
     contact: "Contact",
-    call: "Call",
     
     // Sections
-    featuredProjects: "Featured Projects",
-    experienceAchievements: "Experience & Achievements",
+    featuredProjects: "Projects & Achievements",
+    experienceAchievements: "Hackathons & Olympiads",
     education: "Education",
     technicalSkills: "Technical Skills",
-    letsConnect: "Let's Connect",
+    letsConnect: "Contact",
     
     // Skills categories
     programming: "Programming",
@@ -147,41 +147,38 @@ export const translations = {
     
     // Skills
     skills: [
-      'Python', 'Data Analysis', 'Machine Learning', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'SQL', 'MySQL', 'SQLite',
-      'JavaScript', 'HTML', 'CSS', 'React', 'Flask', 'bs4', 'requests', 'PyQt5', 'Microsoft Office', 'Power BI', 'Tableau',
-      'Figma', 'XML Parsing', '3D Modeling', 'Photopolymer 3D Printing', 'Web Design', 'Mobile Development', 'API Integration',
-      'Git', 'GitHub', 'Docker', 'A/B Testing', 'FastAPI', 'Vue.js', 'Voice Assistants', 'AI Integration'
+      'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'Vue.js', 'React', 'SQL', 'A/B Testing', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-tests', 'T-tests', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML markup', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
     ],
     
     // Projects
     projects: [
       {
-        title: "StudySphere Educational Platform",
-        description: "AI-powered educational platform with 13 neural networks, frontend in HTML/CSS/JS, backend integration, and mobile support",
-        tech: ["HTML", "CSS", "JavaScript", "AI", "Neural Networks"],
-        status: "Active Development",
-        highlight: "AI-Assistant Integration"
+        title: "Winner of XVI International School Competition in Economics",
+        description: "Organized by Russian Economic School and ILoveEconomics.",
+        tech: ["Economics", "Analysis", "Research"],
+        status: "17.02.2025 – 03.05.2025",
+        highlight: "Winner"
       },
       {
-        title: "DANO Data Analysis Olympiad",
-        description: "Top 200 out of 7619 participants in national data analysis olympiad",
-        tech: ["Python", "Data Analysis", "Statistics"],
-        status: "Achievement",
-        highlight: "Top 200/7619"
+        title: "Internship at 'Sputniks' Company (Skolkovo Technopark)",
+        description: "Participated in various development stages: XML markup programming, 3D modeling and printing parts on photopolymer 3D printer, web design of application prototype in Figma, as well as work in the flight control center.",
+        tech: ["XML", "3D Modeling", "Figma", "Web Design"],
+        status: "01.08.2024 – 31.08.2024",
+        highlight: "Internship"
       },
       {
-        title: "T-Bank Hackathon Winner",
-        description: "Web developer and UI/UX designer for restaurant bill splitting app",
-        tech: ["Web Development", "UI/UX", "React"],
-        status: "Completed",
-        highlight: "Hackathon Winner"
+        title: "StudySphere",
+        description: "Educational platform studysphere.volsh.org, including AI assistant based on 13 neural networks. Modern frontend in HTML, CSS, JavaScript with responsive layout. Integration of neural network APIs for text generation and analysis, image creation and file processing. Flexible bot settings (language, style, length, creativity, dialogue history). Developed quiz system, textbook. Platform is free, supports mobile devices, users are not limited in number of requests.",
+        tech: ["HTML", "CSS", "JavaScript", "AI", "13 Neural Networks", "API"],
+        status: "25.12.2024 – PRESENT",
+        highlight: "In Development"
       },
       {
-        title: "IT Purple Hack",
-        description: "Product analyst developing CLTV system for client retention",
-        tech: ["Analytics", "CLTV", "Business Intelligence"],
-        status: "Completed",
-        highlight: "Product Analytics"
+        title: "Shopping Copilot 'IT Purple Hack' 2025",
+        description: "AI-powered Shopping Copilot — personal stylist for Wildberries. Intelligent assistant for clothing selection and creating stylish looks, reducing cognitive load when online shopping.",
+        tech: ["AI", "Personal Stylist", "Wildberries"],
+        status: "Participation",
+        highlight: "Fullstack + Analyst"
       }
     ],
     
@@ -192,8 +189,8 @@ export const translations = {
         description: "Out of 7619 participants in DANO National Data Analysis Olympiad"
       },
       {
-        title: "Hackathon Winner",
-        description: "Multiple hackathon victories including T-Bank, Purple Hack, and Nuclear IT"
+        title: "Hackathon Participant",
+        description: "Multiple hackathon participations including T-Bank, Purple Hack, and Nuclear IT"
       },
       {
         title: "Full-Stack Dev",
@@ -223,11 +220,16 @@ export const translations = {
       {
         institution: "Winter School of Programming Engineering - FKN NIU HSE",
         period: "24.02.2024 - 29.02.2024"
+      },
+      {
+        institution: "Conferences: RUCODE, Purple Conf, MTS True Tech Day, Yandex Conf",
+        program: "Lectures and participation",
+        period: "2024-2025"
       }
     ],
     
     // Contact
-    connectDescription: "Ready to work on exciting projects together? Let's discuss how we can create something amazing.",
+    connectDescription: "If you want to discuss a project, give advice, ask a question, or just chat, here's how you can contact me. I'm always open to interesting projects and new acquaintances. If you have ideas, suggestions, or just want to chat - write! I'll be happy to discuss.",
     contactCards: [
       { label: "Email", value: "dany.ssimon2007@yandex.ru" },
       { label: "Phone", value: "+7 901 387 49 45" },
@@ -235,6 +237,6 @@ export const translations = {
     ],
     
     // Footer
-    footerText: "© 2024 Daniil Simonov. All rights reserved."
+    footerText: "© 2024-2025 Daniil Simonov. All rights reserved."
   }
 };
