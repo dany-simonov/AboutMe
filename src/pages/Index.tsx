@@ -1,27 +1,17 @@
 
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Github, Mail, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
+import { Github, Mail, MapPin, ExternalLink, Calendar, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import LanguageToggle from '@/components/LanguageToggle';
 import SkillsChart from '@/components/SkillsChart';
-import CursorParticles from '@/components/CursorParticles';
-import MorphingGradients from '@/components/MorphingGradients';
+import DraggableSkillsGrid from '@/components/DraggableSkillsGrid';
 import { translations } from '@/data/translations';
 
 const Index = () => {
-  const [darkMode, setDarkMode] = useState(true);
   const [language, setLanguage] = useState<'ru' | 'en'>('ru');
 
   const t = translations[language];
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.remove('light');
-    } else {
-      document.documentElement.classList.add('light');
-    }
-  }, [darkMode]);
 
   useEffect(() => {
     document.documentElement.lang = language;
@@ -32,12 +22,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-foreground relative overflow-x-hidden">
-      {/* Морфинг градиентов */}
-      <MorphingGradients />
-      
-      {/* Частицы курсора */}
-      <CursorParticles />
-      
       {/* Background Effects */}
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-slate-900/50 to-slate-900"></div>
       <div className="fixed inset-0 bg-grid-pattern opacity-5"></div>
@@ -55,14 +39,6 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-3">
             <LanguageToggle language={language} onLanguageChange={setLanguage} />
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={() => setDarkMode(!darkMode)}
-              className="glass-card border-white/20 hover:bg-white/10"
-            >
-              {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            </Button>
           </div>
         </div>
       </header>
@@ -254,42 +230,16 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Skills Grid - Old categories for comparison */}
+        {/* Draggable Skills Grid */}
         <section className="py-20">
           <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-4 gap-8">
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Code className="h-12 w-12 mx-auto mb-4 text-blue-500" />
-                  <h3 className="font-bold mb-2">{t.programming}</h3>
-                  <p className="text-sm text-muted-foreground">Python, JavaScript, HTML, CSS</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Database className="h-12 w-12 mx-auto mb-4 text-green-500" />
-                  <h3 className="font-bold mb-2">{t.dataAnalytics}</h3>
-                  <p className="text-sm text-muted-foreground">Pandas, NumPy, SQL, Power BI, Tableau, Plotly</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Globe className="h-12 w-12 mx-auto mb-4 text-purple-500" />
-                  <h3 className="font-bold mb-2">{t.webDevelopment}</h3>
-                  <p className="text-sm text-muted-foreground">React, Flask, APIs</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card text-center">
-                <CardContent className="p-6">
-                  <Palette className="h-12 w-12 mx-auto mb-4 text-pink-500" />
-                  <h3 className="font-bold mb-2">{t.webDesign}</h3>
-                  <p className="text-sm text-muted-foreground">Figma, {language === 'ru' ? 'Создание прототипов' : 'Prototyping'}, UI/UX</p>
-                </CardContent>
-              </Card>
-            </div>
+            <DraggableSkillsGrid 
+              programming={t.programming}
+              dataAnalytics={t.dataAnalytics}
+              webDevelopment={t.webDevelopment}
+              webDesign={t.webDesign}
+              language={language}
+            />
           </div>
         </section>
 

@@ -5,7 +5,6 @@ import { Card, CardContent } from '@/components/ui/card';
 interface SkillData {
   category: string;
   skills: string[];
-  level: number;
   color: string;
 }
 
@@ -14,15 +13,15 @@ interface SkillsChartProps {
 }
 
 const SkillsChart = ({ skillsData }: SkillsChartProps) => {
-  const [animatedLevels, setAnimatedLevels] = useState<number[]>(skillsData.map(() => 0));
+  const [animatedStates, setAnimatedStates] = useState<boolean[]>(skillsData.map(() => false));
 
   useEffect(() => {
     const timers = skillsData.map((_, index) => {
       return setTimeout(() => {
-        setAnimatedLevels(prev => {
-          const newLevels = [...prev];
-          newLevels[index] = skillsData[index].level;
-          return newLevels;
+        setAnimatedStates(prev => {
+          const newStates = [...prev];
+          newStates[index] = true;
+          return newStates;
         });
       }, index * 200);
     });
@@ -37,16 +36,13 @@ const SkillsChart = ({ skillsData }: SkillsChartProps) => {
           <CardContent className="p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="font-bold text-lg">{skill.category}</h3>
-              <span className="text-sm font-semibold" style={{ color: skill.color }}>
-                {animatedLevels[index]}%
-              </span>
             </div>
             
             <div className="w-full bg-secondary/30 rounded-full h-3 mb-4">
               <div 
                 className="h-3 rounded-full transition-all duration-1000 ease-out"
                 style={{ 
-                  width: `${animatedLevels[index]}%`,
+                  width: animatedStates[index] ? '100%' : '0%',
                   backgroundColor: skill.color,
                   boxShadow: `0 0 10px ${skill.color}50`
                 }}
