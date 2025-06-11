@@ -116,32 +116,34 @@
 }
 
 /* Animation utilities */
-.animate-scroll-x {
-  animation: scroll-x 30s linear infinite;
-}
+@layer utilities {
+  .animate-scroll-x {
+    animation: scroll-x 30s linear infinite;
+  }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
 
-.animate-glow {
-  animation: glow 2s ease-in-out infinite alternate;
-}
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
 
-.animate-fade-in-up {
-  animation: fade-in-up 0.6s ease-out;
-}
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
 
-.animate-fade-in {
-  animation: fade-in 0.3s ease-out;
-}
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
 
-/* Background grid pattern */
-.bg-grid-pattern {
-  background-image: 
-    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
+  /* Background grid pattern */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
 }
 
 /* Mobile optimizations */
