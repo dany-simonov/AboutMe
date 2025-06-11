@@ -69,16 +69,28 @@ export const translations = {
     // Experience cards - все достижения из GitHub
     experienceCards: [
       {
+        title: "Кейс-чемпионат ППР Benefit Admin AI",
+        description: "Создание кафетерия льгот в компании с использованием ИИ (02.06.2025 – 20.06.2025)"
+      },
+      {
+        title: "Хакатон PROD \"Т-Банка\"",
+        description: "Веб-разработчик и UI/UX дизайнер. Разработка приложения для разделения счетов в ресторанах"
+      },
+      {
+        title: "Дататон 2.0 от \"Т-Банка\"",
+        description: "Бизнес-аналитик. Улучшение финансового состояния стартапа по доставке еды"
+      },
+      {
+        title: "Дататон от \"Т-Банка\"",
+        description: "Аналитик данных. План запуска проекта в сфере общепита в Калифорнии"
+      },
+      {
+        title: "\"IT Purple Hack\" 2024",
+        description: "Продуктовый аналитик. Система CLTV для удержания клиентов Альфа-банка"
+      },
+      {
         title: "DANO - Топ-200",
         description: "Из 7619 участников в олимпиаде по анализу данных"
-      },
-      {
-        title: "Purple Hack 2025",
-        description: "Участие в хакатоне по созданию IT-решений"
-      },
-      {
-        title: "T-Bank Хакатон",
-        description: "Разработка финтех решений"
       },
       {
         title: "Nuclear IT Хакатон",
@@ -91,18 +103,6 @@ export const translations = {
       {
         title: "Стажировка Спутникс",
         description: "Технопарк Сколково, разработка и 3D-печать"
-      },
-      {
-        title: "ФКН ВШЭ программы",
-        description: "Летняя и зимняя школа программной инженерии"
-      },
-      {
-        title: "Яндекс.Лицей",
-        description: "Промышленное программирование на Python"
-      },
-      {
-        title: "IT-конференции",
-        description: "RUCODE, Purple Conf, MTS Tech Day, Яндекс Conf"
       }
     ],
     
@@ -118,15 +118,15 @@ export const translations = {
         period: "19.09.2024 - 15.04.2025"
       },
       {
-        institution: "Летняя школа программной инженерии - ФКН НИУ ВШЭ",
+        institution: "Летняя школа программной инженерии - FCS HSE",
         period: "01.07.2024 - 12.07.2024"
       },
       {
-        institution: "Мегаинтенсив по анализу данных - ФКН НИУ ВШЭ",
+        institution: "Мегаинтенсив по анализу данных - FCS HSE",
         period: "14.04.2024 - 21.04.2024"
       },
       {
-        institution: "Зимняя школа программной инженерии - ФКН НИУ ВШЭ",
+        institution: "Зимняя школа программной инженерии - FCS HSE",
         period: "24.02.2024 - 29.02.2024"
       },
       {
@@ -217,16 +217,28 @@ export const translations = {
     // Experience cards - все достижения из GitHub
     experienceCards: [
       {
+        title: "PPR Benefit Admin AI Case Championship",
+        description: "Creating company benefits cafeteria using AI (02.06.2025 – 20.06.2025)"
+      },
+      {
+        title: "T-Bank PROD Hackathon",
+        description: "Web developer and UI/UX designer. Restaurant bill splitting application"
+      },
+      {
+        title: "T-Bank Datathon 2.0",
+        description: "Business analyst. Improving financial state of food delivery startup"
+      },
+      {
+        title: "T-Bank Datathon",
+        description: "Data analyst. Restaurant project launch plan in California"
+      },
+      {
+        title: "IT Purple Hack 2024",
+        description: "Product analyst. CLTV system for Alfa-Bank client retention"
+      },
+      {
         title: "DANO - Top 200",
         description: "Out of 7619 participants in data analysis olympiad"
-      },
-      {
-        title: "Purple Hack 2025",
-        description: "Participation in IT solutions hackathon"
-      },
-      {
-        title: "T-Bank Hackathon",
-        description: "Developing fintech solutions"
       },
       {
         title: "Nuclear IT Hackathon",
@@ -239,18 +251,6 @@ export const translations = {
       {
         title: "Sputnix Internship",
         description: "Skolkovo Technopark, development and 3D printing"
-      },
-      {
-        title: "FCS HSE Programs",
-        description: "Summer and winter programming engineering school"
-      },
-      {
-        title: "Yandex Lyceum",
-        description: "Industrial Python Programming"
-      },
-      {
-        title: "IT Conferences",
-        description: "RUCODE, Purple Conf, MTS Tech Day, Yandex Conf"
       }
     ],
     

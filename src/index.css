@@ -101,14 +101,14 @@
     scroll-behavior: smooth;
   }
 
-  /* Light theme specific overrides */
+  /* Light theme specific overrides with purple-green gradients */
   .light body {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%, #f8fafc 100%);
+    background: linear-gradient(135deg, #f0f3ff 0%, #e8f5e8 25%, #f5f0ff 50%, #e8f5e8 75%, #f0f3ff 100%);
   }
 
   .light footer {
-    background: rgba(100, 116, 139, 0.1) !important;
-    border-color: rgba(100, 116, 139, 0.2) !important;
+    background: rgba(70, 70, 70, 0.2) !important;
+    border-color: rgba(70, 70, 70, 0.3) !important;
   }
 }
 

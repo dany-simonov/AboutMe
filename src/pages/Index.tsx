@@ -185,7 +185,7 @@ const Index = () => {
               <span className="gradient-text">{t.experienceAchievements}</span>
             </h2>
             
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6">
               {t.experienceCards.map((achievement, index) => (
                 <Card key={index} className="glass-card text-center hover:scale-105 transition-all duration-300">
                   <CardContent className="p-4">
@@ -341,3 +341,5 @@ const Index = () => {
 };
 
 export default Index;
+
+}
