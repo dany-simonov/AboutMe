@@ -1,8 +1,12 @@
+
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Mail, MapPin, ExternalLink, Calendar, Award, Code, Database, BarChart3, Palette, Globe, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import LanguageToggle from '@/components/LanguageToggle';
+import SkillsChart from '@/components/SkillsChart';
+import CursorParticles from '@/components/CursorParticles';
+import MorphingGradients from '@/components/MorphingGradients';
 import { translations } from '@/data/translations';
 
 const Index = () => {
@@ -28,6 +32,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-foreground relative overflow-x-hidden">
+      {/* Морфинг градиентов */}
+      <MorphingGradients />
+      
+      {/* Частицы курсора */}
+      <CursorParticles />
+      
       {/* Background Effects */}
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-slate-900/50 to-slate-900"></div>
       <div className="fixed inset-0 bg-grid-pattern opacity-5"></div>
@@ -178,7 +188,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Experience Section - Updated to grid layout */}
+        {/* Experience Section */}
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
@@ -233,13 +243,20 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Skills Grid - Updated categories */}
+        {/* Animated Skills Section */}
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
               <span className="gradient-text">{t.technicalSkills}</span>
             </h2>
             
+            <SkillsChart skillsData={t.skillsData} />
+          </div>
+        </section>
+
+        {/* Skills Grid - Old categories for comparison */}
+        <section className="py-20">
+          <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-4 gap-8">
               <Card className="glass-card text-center">
                 <CardContent className="p-6">

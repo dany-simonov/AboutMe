@@ -48,13 +48,13 @@
   }
 
   .light {
-    --background: 240 100% 98%;
+    --background: 255 255% 98%;
     --foreground: 240 10% 3.9%;
 
-    --card: 240 100% 99%;
+    --card: 255 255% 99%;
     --card-foreground: 240 10% 3.9%;
 
-    --popover: 240 100% 99%;
+    --popover: 255 255% 99%;
     --popover-foreground: 240 10% 3.9%;
 
     --primary: 142.1 76.2% 36.3%;
@@ -76,7 +76,7 @@
     --input: 240 5.9% 90%;
     --ring: 142.1 76.2% 36.3%;
 
-    --sidebar-background: 240 100% 99%;
+    --sidebar-background: 255 255% 99%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
@@ -95,6 +95,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    cursor: none;
   }
 
   html {
@@ -103,12 +104,12 @@
 
   /* Light theme specific overrides with purple-green gradients */
   .light body {
-    background: linear-gradient(135deg, #f0f3ff 0%, #e8f5e8 25%, #f5f0ff 50%, #e8f5e8 75%, #f0f3ff 100%);
+    background: linear-gradient(135deg, #f8f5ff 0%, #f0fff0 25%, #f5f0ff 50%, #f0fff0 75%, #f8f5ff 100%);
   }
 
   .light footer {
-    background: rgba(70, 70, 70, 0.2) !important;
-    border-color: rgba(70, 70, 70, 0.3) !important;
+    background: rgba(120, 120, 120, 0.15) !important;
+    border-color: rgba(120, 120, 120, 0.25) !important;
   }
 }
 
@@ -134,4 +135,65 @@
     @apply absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 opacity-75 blur-sm;
     z-index: -1;
   }
+}
+
+/* Keyframes for animations */
+@keyframes scroll-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Animation utilities */
+.animate-scroll-x {
+  animation: scroll-x 30s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Background grid pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
 }

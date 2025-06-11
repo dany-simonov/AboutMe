@@ -25,6 +25,70 @@ export const translations = {
     webDevelopment: "Веб-разработка",
     webDesign: "Веб-дизайн",
     
+    // Skills for animated diagram
+    skillsData: [
+      {
+        category: "Python",
+        skills: ["Pandas", "NumPy", "Seaborn", "Matplotlib", "Flask", "g4f", "Requests", "BeautifulSoup", "FastAPI"],
+        level: 95,
+        color: "#3776ab"
+      },
+      {
+        category: "Git / Version Control",
+        skills: ["GitHub", "GitLab", "GitHub Actions"],
+        level: 90,
+        color: "#f05032"
+      },
+      {
+        category: "Design & Prototyping",
+        skills: ["Figma", "FigJam", "Интерфейсы", "Прототипы"],
+        level: 85,
+        color: "#f24e1e"
+      },
+      {
+        category: "A/B Testing",
+        skills: ["Z-тесты", "T-тесты", "Статистика"],
+        level: 80,
+        color: "#00d4aa"
+      },
+      {
+        category: "Web Parsing",
+        skills: ["BeautifulSoup", "Requests", "Автоматизация"],
+        level: 88,
+        color: "#ff6b6b"
+      },
+      {
+        category: "SQL & Databases",
+        skills: ["SQLite", "MySQL", "Запросы"],
+        level: 75,
+        color: "#336791"
+      },
+      {
+        category: "Web Technologies",
+        skills: ["JavaScript", "HTML", "CSS", "React"],
+        level: 70,
+        color: "#f7df1e"
+      },
+      {
+        category: "Data Visualization",
+        skills: ["Power BI", "Tableau", "Plotly"],
+        level: 82,
+        color: "#e97627"
+      },
+      {
+        category: "DevOps & Testing",
+        skills: ["Docker", "unittest", "pytest"],
+        level: 65,
+        color: "#2496ed"
+      },
+      {
+        category: "AI Integration",
+        skills: ["Voice Assistants", "API Integration"],
+        level: 78,
+        color: "#9c27b0"
+      }
+    ],
+    
     // Skills
     skills: [
       'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'React', 'SQL', 'A/B-тестирование', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Plotly', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-тесты', 'T-тесты', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML разметка', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
@@ -36,7 +100,7 @@ export const translations = {
         title: "Призёр XVI Международного школьного конкурса РЭШ по экономике",
         description: "Организовано Российской экономической школой и ILoveEconomics.",
         tech: ["Экономика", "Анализ", "Исследования"],
-        status: "17.02.2025 – 03.05.2025",
+        status: "2025",
         highlight: "Призёр",
         link: "http://schoolcontest.nes.ru/"
       },
@@ -66,43 +130,43 @@ export const translations = {
       }
     ],
     
-    // Experience cards - все достижения из GitHub
+    // Experience cards - в хронологическом порядке от старого к новому
     experienceCards: [
       {
-        title: "Кейс-чемпионат ППР Benefit Admin AI",
-        description: "Создание кафетерия льгот в компании с использованием ИИ (02.06.2025 – 20.06.2025)"
-      },
-      {
-        title: "Хакатон PROD \"Т-Банка\"",
-        description: "Веб-разработчик и UI/UX дизайнер. Разработка приложения для разделения счетов в ресторанах"
+        title: "Дататон от \"Т-Банка\"",
+        description: "Аналитик данных. План запуска проекта в сфере общепита в Калифорнии"
       },
       {
         title: "Дататон 2.0 от \"Т-Банка\"",
         description: "Бизнес-аналитик. Улучшение финансового состояния стартапа по доставке еды"
       },
       {
-        title: "Дататон от \"Т-Банка\"",
-        description: "Аналитик данных. План запуска проекта в сфере общепита в Калифорнии"
-      },
-      {
         title: "\"IT Purple Hack\" 2024",
         description: "Продуктовый аналитик. Система CLTV для удержания клиентов Альфа-банка"
       },
       {
-        title: "DANO - Топ-200",
-        description: "Из 7619 участников в олимпиаде по анализу данных"
+        title: "Хакатон PROD \"Т-Банка\"",
+        description: "Веб-разработчик и UI/UX дизайнер. Приложение для разделения счетов в ресторанах"
       },
       {
-        title: "Nuclear IT Хакатон",
-        description: "Создание решений для атомной отрасли"
+        title: "Nuclear IT Hack",
+        description: "Продуктовый аналитик. Сервис анализа эмоционального состояния сотрудников"
+      },
+      {
+        title: "DANO - Топ-200",
+        description: "Топ-200 из 7619 участников. Анализ компаний российского сектора во время COVID-19"
       },
       {
         title: "Призёр РЭШ по экономике",
-        description: "XVI Международный школьный конкурс"
+        description: "XVI Международный школьный конкурс по экономике. Призёр 2025"
       },
       {
-        title: "Стажировка Спутникс",
-        description: "Технопарк Сколково, разработка и 3D-печать"
+        title: "\"IT Purple Hack\" 2025",
+        description: "Fullstack-разработчик и продуктовый аналитик. Shopping Copilot - AI-стилист для Wildberries"
+      },
+      {
+        title: "Кейс-чемпионат ППР Benefit Admin AI",
+        description: "Создание кафетерия льгот в компании с использованием ИИ"
       }
     ],
     
@@ -173,6 +237,70 @@ export const translations = {
     webDevelopment: "Web Development",
     webDesign: "Web Design",
     
+    // Skills for animated diagram
+    skillsData: [
+      {
+        category: "Python",
+        skills: ["Pandas", "NumPy", "Seaborn", "Matplotlib", "Flask", "g4f", "Requests", "BeautifulSoup", "FastAPI"],
+        level: 95,
+        color: "#3776ab"
+      },
+      {
+        category: "Git / Version Control",
+        skills: ["GitHub", "GitLab", "GitHub Actions"],
+        level: 90,
+        color: "#f05032"
+      },
+      {
+        category: "Design & Prototyping",
+        skills: ["Figma", "FigJam", "Interfaces", "Prototypes"],
+        level: 85,
+        color: "#f24e1e"
+      },
+      {
+        category: "A/B Testing",
+        skills: ["Z-tests", "T-tests", "Statistics"],
+        level: 80,
+        color: "#00d4aa"
+      },
+      {
+        category: "Web Parsing",
+        skills: ["BeautifulSoup", "Requests", "Automation"],
+        level: 88,
+        color: "#ff6b6b"
+      },
+      {
+        category: "SQL & Databases",
+        skills: ["SQLite", "MySQL", "Queries"],
+        level: 75,
+        color: "#336791"
+      },
+      {
+        category: "Web Technologies",
+        skills: ["JavaScript", "HTML", "CSS", "React"],
+        level: 70,
+        color: "#f7df1e"
+      },
+      {
+        category: "Data Visualization",
+        skills: ["Power BI", "Tableau", "Plotly"],
+        level: 82,
+        color: "#e97627"
+      },
+      {
+        category: "DevOps & Testing",
+        skills: ["Docker", "unittest", "pytest"],
+        level: 65,
+        color: "#2496ed"
+      },
+      {
+        category: "AI Integration",
+        skills: ["Voice Assistants", "API Integration"],
+        level: 78,
+        color: "#9c27b0"
+      }
+    ],
+    
     // Skills
     skills: [
       'Python', 'Git', 'AI Integration', 'Voice Assistant Development', 'Docker', 'Parsing', 'HTML', 'CSS', 'JavaScript', 'React', 'SQL', 'A/B Testing', 'Power BI', 'Tableau', 'Miro', 'Figma', 'Pandas', 'NumPy', 'Seaborn', 'Matplotlib', 'Plotly', 'Flask', 'g4f', 'Requests', 'BeautifulSoup', 'FastAPI', 'GitHub', 'GitLab', 'GitHub Actions', 'Z-tests', 'T-tests', 'Postman', 'SQLite', 'MySQL', 'XML', 'KML markup', 'Excel', 'Notion', 'REST API', 'Slack', 'unittest', 'pytest'
@@ -184,7 +312,7 @@ export const translations = {
         title: "Winner of XVI International School Competition in Economics",
         description: "Organized by Russian Economic School and ILoveEconomics.",
         tech: ["Economics", "Analysis", "Research"],
-        status: "17.02.2025 – 03.05.2025",
+        status: "2025",
         highlight: "Winner",
         link: "http://schoolcontest.nes.ru/"
       },
@@ -214,43 +342,43 @@ export const translations = {
       }
     ],
     
-    // Experience cards - все достижения из GitHub
+    // Experience cards - в хронологическом порядке от старого к новому
     experienceCards: [
       {
-        title: "PPR Benefit Admin AI Case Championship",
-        description: "Creating company benefits cafeteria using AI (02.06.2025 – 20.06.2025)"
-      },
-      {
-        title: "T-Bank PROD Hackathon",
-        description: "Web developer and UI/UX designer. Restaurant bill splitting application"
+        title: "T-Bank Datathon",
+        description: "Data analyst. Restaurant project launch plan in California"
       },
       {
         title: "T-Bank Datathon 2.0",
         description: "Business analyst. Improving financial state of food delivery startup"
       },
       {
-        title: "T-Bank Datathon",
-        description: "Data analyst. Restaurant project launch plan in California"
-      },
-      {
         title: "IT Purple Hack 2024",
         description: "Product analyst. CLTV system for Alfa-Bank client retention"
       },
       {
-        title: "DANO - Top 200",
-        description: "Out of 7619 participants in data analysis olympiad"
+        title: "T-Bank PROD Hackathon",
+        description: "Web developer and UI/UX designer. Restaurant bill splitting application"
       },
       {
         title: "Nuclear IT Hackathon",
-        description: "Creating solutions for nuclear industry"
+        description: "Product analyst. Employee emotional state analysis service"
+      },
+      {
+        title: "DANO - Top 200",
+        description: "Top 200 out of 7619 participants. Russian sector companies analysis during COVID-19"
       },
       {
         title: "Economics Competition Winner",
-        description: "XVI International School Competition"
+        description: "XVI International School Competition in Economics. Winner 2025"
       },
       {
-        title: "Sputnix Internship",
-        description: "Skolkovo Technopark, development and 3D printing"
+        title: "IT Purple Hack 2025",
+        description: "Fullstack developer and product analyst. Shopping Copilot - AI stylist for Wildberries"
+      },
+      {
+        title: "PPR Benefit Admin AI Case Championship",
+        description: "Creating company benefits cafeteria using AI"
       }
     ],
     
