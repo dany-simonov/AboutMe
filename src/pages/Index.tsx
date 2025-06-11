@@ -4,8 +4,7 @@ import { Github, Mail, MapPin, ExternalLink, Calendar, Award } from 'lucide-reac
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import LanguageToggle from '@/components/LanguageToggle';
-import SkillsChart from '@/components/SkillsChart';
-import DraggableSkillsGrid from '@/components/DraggableSkillsGrid';
+import DraggableSkillsList from '@/components/DraggableSkillsList';
 import { translations } from '@/data/translations';
 
 const Index = () => {
@@ -117,7 +116,7 @@ const Index = () => {
               <span className="gradient-text">{t.featuredProjects}</span>
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {t.projects.map((project, index) => (
                 <Card key={index} className="glass-card hover:scale-105 transition-all duration-300 group">
                   <CardContent className="p-6">
@@ -216,27 +215,10 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Animated Skills Section */}
+        {/* Draggable Skills Section */}
         <section className="py-20 bg-gradient-to-r from-slate-900/50 via-purple-900/50 to-slate-900/50">
           <div className="container mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              <span className="gradient-text">{t.technicalSkills}</span>
-            </h2>
-            
-            <SkillsChart skillsData={t.skillsData} />
-          </div>
-        </section>
-
-        {/* Draggable Skills Grid */}
-        <section className="py-20">
-          <div className="container mx-auto px-6">
-            <DraggableSkillsGrid 
-              programming={t.programming}
-              dataAnalytics={t.dataAnalytics}
-              webDevelopment={t.webDevelopment}
-              webDesign={t.webDesign}
-              language={language}
-            />
+            <DraggableSkillsList language={language} />
           </div>
         </section>
 

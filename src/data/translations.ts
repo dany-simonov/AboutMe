@@ -1,7 +1,8 @@
+
 export const translations = {
   ru: {
     name: "Даниил Симонов",
-    age: "16 лет",
+    age: "17 лет",
     location: "Москва, Россия",
     description: "Fullstack-разработчик и аналитик данных с опытом создания веб-приложений и анализа бизнес-данных. Специализируюсь на Python, JavaScript и современных фреймворках.",
     contact: "Связаться",
@@ -12,33 +13,47 @@ export const translations = {
     featuredProjects: "Избранные проекты",
     projects: [
       {
-        title: "Платформа аналитики данных",
-        description: "Веб-приложение для визуализации и анализа больших данных с интерактивными дашбордами",
-        tech: ["Python", "Flask", "React", "D3.js", "PostgreSQL"],
-        status: "Готов к релизу",
-        highlight: "ТОП",
+        title: "Система аналитики для стартапа доставки еды",
+        description: "Комплексный анализ бизнес-показателей и прогнозирование для улучшения финансового состояния стартапа",
+        tech: ["Python", "Pandas", "SQL", "Power BI", "Machine Learning"],
+        status: "Завершено",
+        highlight: "ДАТАТОН",
         link: "https://github.com/dany-simonov"
       },
       {
-        title: "AI Chatbot для образования",
-        description: "Умный чат-бот для помощи студентам в изучении программирования с персонализированными рекомендациями",
-        tech: ["Python", "OpenAI API", "React", "Node.js"],
+        title: "Shopping Copilot - AI-стилист для Wildberries",
+        description: "Умный помощник для подбора одежды с использованием искусственного интеллекта и анализа предпочтений",
+        tech: ["Python", "AI/ML", "React", "Flask", "OpenAI API"],
         status: "Продакшн",
-        highlight: "НОВЫЙ"
+        highlight: "AI"
       },
       {
-        title: "Система управления задачами",
-        description: "Современное приложение для управления проектами с командной работой и отслеживанием прогресса",
-        tech: ["React", "TypeScript", "Supabase"],
-        status: "Активная разработка",
-        highlight: "АКТУАЛЬНО"
-      },
-      {
-        title: "Анализ рынка недвижимости",
-        description: "Исследование и прогнозирование цен на недвижимость с использованием машинного обучения",
-        tech: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-        status: "Завершено",
+        title: "Система CLTV для Альфа-банка",
+        description: "Модель для расчета жизненной ценности клиента и повышения их удержания",
+        tech: ["Python", "SQL", "Machine Learning", "Analytics"],
+        status: "Готов к релизу",
         highlight: "ML"
+      },
+      {
+        title: "Приложение для разделения счетов",
+        description: "Веб-приложение для удобного разделения счетов в ресторанах с современным UI/UX дизайном",
+        tech: ["React", "TypeScript", "Node.js", "Figma"],
+        status: "Активная разработка",
+        highlight: "UI/UX"
+      },
+      {
+        title: "Анализ эмоционального состояния сотрудников",
+        description: "Сервис для мониторинга и анализа эмоционального состояния команды с рекомендациями",
+        tech: ["Python", "NLP", "Flask", "Analytics"],
+        status: "Завершено",
+        highlight: "NLP"
+      },
+      {
+        title: "Кафетерий льгот с ИИ",
+        description: "Платформа для управления корпоративными льготами с персонализированными рекомендациями",
+        tech: ["Python", "AI", "React", "Database"],
+        status: "MVP готов",
+        highlight: "НОВЫЙ"
       }
     ],
     experienceAchievements: "Хакатоны и олимпиады",
@@ -83,11 +98,19 @@ export const translations = {
     education: "Образование",
     educationData: [
       {
+        institution: "ГБОУ Школа № 1571 — Углубленное изучение технологических дисциплин",
+        period: "2015-2025"
+      },
+      {
         institution: "ФКН ВШЭ — программы «Летняя и зимняя школа программной инженерии»",
         period: "2024"
       },
       {
         institution: "IT-конференции: RUCODE, Purple Conf, MTS Tech Day, Яндекс Conf",
+        period: "2023-2024"
+      },
+      {
+        institution: "Курсы по Data Science и Machine Learning",
         period: "2023-2024"
       }
     ],
@@ -175,11 +198,11 @@ export const translations = {
       { label: "Telegram", value: "@dany_simonov" },
       { label: "Местоположение", value: "Москва, Россия" }
     ],
-    footerText: "© 2024 Даниил Симонов. Создано с использованием современных веб-технологий."
+    footerText: "© 2024 - 2025 Даниил Симонов. Все права защищены."
   },
   en: {
     name: "Daniil Simonov",
-    age: "16 years old",
+    age: "17 years old",
     location: "Moscow, Russia", 
     description: "Full-stack developer and data analyst with experience in creating web applications and analyzing business data. I specialize in Python, JavaScript, and modern frameworks.",
     contact: "Contact",
@@ -190,33 +213,47 @@ export const translations = {
     featuredProjects: "Featured Projects",
     projects: [
       {
-        title: "Data Analytics Platform",
-        description: "Web application for visualizing and analyzing big data with interactive dashboards",
-        tech: ["Python", "Flask", "React", "D3.js", "PostgreSQL"],
-        status: "Ready for release",
-        highlight: "TOP",
+        title: "Analytics System for Food Delivery Startup",
+        description: "Comprehensive business metrics analysis and forecasting to improve startup financial performance",
+        tech: ["Python", "Pandas", "SQL", "Power BI", "Machine Learning"],
+        status: "Completed",
+        highlight: "DATATHON",
         link: "https://github.com/dany-simonov"
       },
       {
-        title: "AI Chatbot for Education",
-        description: "Smart chatbot to help students learn programming with personalized recommendations",
-        tech: ["Python", "OpenAI API", "React", "Node.js"],
+        title: "Shopping Copilot - AI Stylist for Wildberries",
+        description: "Smart clothing recommendation assistant using artificial intelligence and preference analysis",
+        tech: ["Python", "AI/ML", "React", "Flask", "OpenAI API"],
         status: "Production",
-        highlight: "NEW"
+        highlight: "AI"
       },
       {
-        title: "Task Management System",
-        description: "Modern project management application with team collaboration and progress tracking",
-        tech: ["React", "TypeScript", "Supabase"],
-        status: "Active development",
-        highlight: "CURRENT"
-      },
-      {
-        title: "Real Estate Market Analysis",
-        description: "Research and forecasting of real estate prices using machine learning",
-        tech: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-        status: "Completed",
+        title: "CLTV System for Alfa Bank",
+        description: "Customer lifetime value model for improving client retention",
+        tech: ["Python", "SQL", "Machine Learning", "Analytics"],
+        status: "Ready for release",
         highlight: "ML"
+      },
+      {
+        title: "Bill Splitting Application",
+        description: "Web application for convenient restaurant bill splitting with modern UI/UX design",
+        tech: ["React", "TypeScript", "Node.js", "Figma"],
+        status: "Active development",
+        highlight: "UI/UX"
+      },
+      {
+        title: "Employee Emotional State Analysis",
+        description: "Service for monitoring and analyzing team emotional state with recommendations",
+        tech: ["Python", "NLP", "Flask", "Analytics"],
+        status: "Completed",
+        highlight: "NLP"
+      },
+      {
+        title: "AI-Powered Benefits Cafeteria",
+        description: "Platform for managing corporate benefits with personalized AI recommendations",
+        tech: ["Python", "AI", "React", "Database"],
+        status: "MVP ready",
+        highlight: "NEW"
       }
     ],
     experienceAchievements: "Hackathons and Competitions",
@@ -261,11 +298,19 @@ export const translations = {
     education: "Education",
     educationData: [
       {
+        institution: "School № 1571 — Advanced study of technological disciplines",
+        period: "2015-2025"
+      },
+      {
         institution: "HSE FCS — Summer and Winter Software Engineering School programs",
         period: "2024"
       },
       {
         institution: "IT conferences: RUCODE, Purple Conf, MTS Tech Day, Yandex Conf",
+        period: "2023-2024"
+      },
+      {
+        institution: "Data Science and Machine Learning courses",
         period: "2023-2024"
       }
     ],
@@ -353,6 +398,6 @@ export const translations = {
       { label: "Telegram", value: "@dany_simonov" },
       { label: "Location", value: "Moscow, Russia" }
     ],
-    footerText: "© 2024 Daniil Simonov. Built with modern web technologies."
+    footerText: "© 2024 - 2025 Daniil Simonov. All rights reserved."
   }
 };
