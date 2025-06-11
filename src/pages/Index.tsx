@@ -203,9 +203,6 @@ const Index = () => {
                     <div className="flex items-start justify-between">
                       <div>
                         <h3 className="text-lg font-semibold mb-2">{edu.institution}</h3>
-                        {edu.program && (
-                          <p className="text-muted-foreground mb-2">{edu.program}</p>
-                        )}
                       </div>
                       <div className="flex items-center text-sm text-muted-foreground">
                         <Calendar className="h-4 w-4 mr-1" />
