@@ -112,93 +112,43 @@ const DraggableSkillsList = ({ language }: DraggableSkillsListProps) => {
     setDraggedIndex(null);
   };
 
-  const getCategoryTitle = (category: string) => {
-    const titles = {
-      ru: {
-        language: "Языки программирования",
-        data: "Анализ данных",
-        web: "Веб-разработка",
-        design: "Дизайн",
-        analytics: "Аналитика",
-        database: "Базы данных",
-        markup: "Разметка",
-        tools: "Инструменты",
-        bi: "Business Intelligence",
-        devops: "DevOps",
-        api: "API",
-        testing: "Тестирование",
-        ai: "Искусственный интеллект",
-        vcs: "Система контроля версий",
-        parsing: "Парсинг"
-      },
-      en: {
-        language: "Programming Languages",
-        data: "Data Analysis",
-        web: "Web Development",
-        design: "Design",
-        analytics: "Analytics",
-        database: "Databases",
-        markup: "Markup",
-        tools: "Tools",
-        bi: "Business Intelligence",
-        devops: "DevOps",
-        api: "API",
-        testing: "Testing",
-        ai: "Artificial Intelligence",
-        vcs: "Version Control",
-        parsing: "Parsing"
-      }
-    };
-    return titles[language][category as keyof typeof titles[typeof language]] || category;
-  };
-
-  const groupedSkills = skills.reduce((acc, skill, index) => {
-    if (!acc[skill.category]) {
-      acc[skill.category] = [];
-    }
-    acc[skill.category].push({ ...skill, originalIndex: index });
-    return acc;
-  }, {} as Record<string, Array<Skill & { originalIndex: number }>>);
-
   return (
-    <div className="space-y-8">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+    <div className="space-y-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
         <span className="gradient-text">
           {language === 'ru' ? 'Технические навыки' : 'Technical Skills'}
         </span>
       </h2>
       
-      {Object.entries(groupedSkills).map(([category, categorySkills]) => (
-        <div key={category} className="space-y-4">
-          <h3 className="text-xl font-semibold text-center text-primary">
-            {getCategoryTitle(category)}
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {categorySkills.map((skill) => {
-              const IconComponent = skill.icon;
-              return (
-                <Card 
-                  key={`${skill.name}-${skill.originalIndex}`}
-                  className="glass-card text-center cursor-move hover:scale-105 transition-all duration-300 group"
-                  draggable
-                  onDragStart={(e) => handleDragStart(e, skill.originalIndex)}
-                  onDragOver={handleDragOver}
-                  onDrop={(e) => handleDrop(e, skill.originalIndex)}
-                  style={{
-                    opacity: draggedIndex === skill.originalIndex ? 0.5 : 1,
-                    transform: draggedIndex === skill.originalIndex ? 'rotate(2deg) scale(1.05)' : 'none'
-                  }}
-                >
-                  <CardContent className="p-4">
-                    <IconComponent className={`h-8 w-8 mx-auto mb-2 ${skill.color} group-hover:scale-110 transition-transform`} />
-                    <p className="text-sm font-medium text-foreground">{skill.name}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+      {/* Apple-style compact grid */}
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
+          {skills.map((skill, index) => {
+            const IconComponent = skill.icon;
+            return (
+              <Card 
+                key={`${skill.name}-${index}`}
+                className="glass-card aspect-square cursor-move hover:scale-105 transition-all duration-300 group border-white/10"
+                draggable
+                onDragStart={(e) => handleDragStart(e, index)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, index)}
+                style={{
+                  opacity: draggedIndex === index ? 0.5 : 1,
+                  transform: draggedIndex === index ? 'rotate(2deg) scale(1.05)' : 'none'
+                }}
+              >
+                <CardContent className="p-3 h-full flex flex-col items-center justify-center">
+                  <IconComponent className={`h-6 w-6 mb-2 ${skill.color} group-hover:scale-110 transition-transform`} />
+                  <p className="text-xs font-medium text-foreground text-center leading-tight">
+                    {skill.name}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
-      ))}
+      </div>
       
       <div className="text-center mt-8">
         <p className="text-sm text-muted-foreground">

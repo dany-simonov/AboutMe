@@ -13,12 +13,19 @@ export const translations = {
     featuredProjects: "Избранные проекты",
     projects: [
       {
-        title: "Система аналитики для стартапа доставки еды",
-        description: "Комплексный анализ бизнес-показателей и прогнозирование для улучшения финансового состояния стартапа",
-        tech: ["Python", "Pandas", "SQL", "Power BI", "Machine Learning"],
+        title: "Стадисфера",
+        description: "Платформа для анализа спортивной статистики с продвинутой аналитикой и визуализацией данных",
+        tech: ["Python", "Data Analysis", "Machine Learning", "Visualization"],
         status: "Завершено",
-        highlight: "ДАТАТОН",
+        highlight: "СПОРТ",
         link: "https://github.com/dany-simonov"
+      },
+      {
+        title: "Стажировка в компании \"Спутникс\"",
+        description: "Работа в Технопарке Сколково над проектами в сфере космических технологий и анализа данных",
+        tech: ["Python", "Data Analysis", "Space Tech", "Analytics"],
+        status: "Завершено",
+        highlight: "СКОЛКОВО"
       },
       {
         title: "Shopping Copilot - AI-стилист для Wildberries",
@@ -28,46 +35,11 @@ export const translations = {
         highlight: "AI"
       },
       {
-        title: "Система CLTV для Альфа-банка",
-        description: "Модель для расчета жизненной ценности клиента и повышения их удержания",
-        tech: ["Python", "SQL", "Machine Learning", "Analytics"],
-        status: "Готов к релизу",
-        highlight: "ML"
-      },
-      {
-        title: "Приложение для разделения счетов",
-        description: "Веб-приложение для удобного разделения счетов в ресторанах с современным UI/UX дизайном",
-        tech: ["React", "TypeScript", "Node.js", "Figma"],
-        status: "Активная разработка",
-        highlight: "UI/UX"
-      },
-      {
-        title: "Анализ эмоционального состояния сотрудников",
-        description: "Сервис для мониторинга и анализа эмоционального состояния команды с рекомендациями",
-        tech: ["Python", "NLP", "Flask", "Analytics"],
+        title: "Призёр XVI Международного школьного конкурса РЭШ",
+        description: "Достижение призового места в престижном международном конкурсе по экономике",
+        tech: ["Economics", "Analysis", "Research", "Strategy"],
         status: "Завершено",
-        highlight: "NLP"
-      },
-      {
-        title: "Кафетерий льгот с ИИ",
-        description: "Платформа для управления корпоративными льготами с персонализированными рекомендациями",
-        tech: ["Python", "AI", "React", "Database"],
-        status: "MVP готов",
-        highlight: "НОВЫЙ"
-      },
-      {
-        title: "План запуска проекта в Калифорнии",
-        description: "Анализ рынка общепита и разработка стратегии запуска бизнеса в Калифорнии",
-        tech: ["Python", "Data Analysis", "Market Research", "Business Strategy"],
-        status: "Завершено",
-        highlight: "БИЗНЕС"
-      },
-      {
-        title: "Voice Assistant Integration",
-        description: "Интеграция голосового помощника с возможностями AI для различных задач",
-        tech: ["Python", "AI", "Voice Recognition", "API"],
-        status: "В разработке",
-        highlight: "ГОЛОС"
+        highlight: "ПРИЗЁР"
       }
     ],
     experienceAchievements: "Хакатоны и олимпиады",
@@ -107,18 +79,6 @@ export const translations = {
       {
         title: "\"Nuclear IT Hack\"",
         description: "Продуктовый аналитик. Сервис анализа эмоционального состояния сотрудников."
-      },
-      {
-        title: "Олимпиада НТИ",
-        description: "Участие в олимпиаде по информационным технологиям"
-      },
-      {
-        title: "Хакатон по кибербезопасности",
-        description: "Разработка решений в области информационной безопасности"
-      },
-      {
-        title: "AI Hackathon Moscow",
-        description: "Создание AI-решений для реальных бизнес-задач"
       }
     ],
     education: "Образование",
@@ -144,7 +104,7 @@ export const translations = {
         period: "2024"
       },
       {
-        institution: "IT-конференции: RUCODE, Purple Conf, MTS True Tech Day, Яндекс Conf",
+        institution: "Лекции на конференциях: RUCODE, Purple Conf, MTS True Tech Day, Яндекс Conf и другие",
         period: "2023-2024"
       }
     ],
@@ -247,12 +207,19 @@ export const translations = {
     featuredProjects: "Featured Projects",
     projects: [
       {
-        title: "Analytics System for Food Delivery Startup",
-        description: "Comprehensive business metrics analysis and forecasting to improve startup financial performance",
-        tech: ["Python", "Pandas", "SQL", "Power BI", "Machine Learning"],
+        title: "Stadisfera",
+        description: "Platform for sports statistics analysis with advanced analytics and data visualization",
+        tech: ["Python", "Data Analysis", "Machine Learning", "Visualization"],
         status: "Completed",
-        highlight: "DATATHON",
+        highlight: "SPORTS",
         link: "https://github.com/dany-simonov"
+      },
+      {
+        title: "Internship at \"Sputniks\" Company",
+        description: "Work at Skolkovo Technopark on projects in space technology and data analysis",
+        tech: ["Python", "Data Analysis", "Space Tech", "Analytics"],
+        status: "Completed",
+        highlight: "SKOLKOVO"
       },
       {
         title: "Shopping Copilot - AI Stylist for Wildberries",
@@ -262,46 +229,11 @@ export const translations = {
         highlight: "AI"
       },
       {
-        title: "CLTV System for Alfa Bank",
-        description: "Customer lifetime value model for improving client retention",
-        tech: ["Python", "SQL", "Machine Learning", "Analytics"],
-        status: "Ready for release",
-        highlight: "ML"
-      },
-      {
-        title: "Bill Splitting Application",
-        description: "Web application for convenient restaurant bill splitting with modern UI/UX design",
-        tech: ["React", "TypeScript", "Node.js", "Figma"],
-        status: "Active development",
-        highlight: "UI/UX"
-      },
-      {
-        title: "Employee Emotional State Analysis",
-        description: "Service for monitoring and analyzing team emotional state with recommendations",
-        tech: ["Python", "NLP", "Flask", "Analytics"],
+        title: "NES XVI International School Competition Winner",
+        description: "Achievement of prize place in prestigious international economics competition",
+        tech: ["Economics", "Analysis", "Research", "Strategy"],
         status: "Completed",
-        highlight: "NLP"
-      },
-      {
-        title: "AI-Powered Benefits Cafeteria",
-        description: "Platform for managing corporate benefits with personalized AI recommendations",
-        tech: ["Python", "AI", "React", "Database"],
-        status: "MVP ready",
-        highlight: "NEW"
-      },
-      {
-        title: "California Project Launch Plan",
-        description: "Food service market analysis and business launch strategy development in California",
-        tech: ["Python", "Data Analysis", "Market Research", "Business Strategy"],
-        status: "Completed",
-        highlight: "BUSINESS"
-      },
-      {
-        title: "Voice Assistant Integration",
-        description: "Voice assistant integration with AI capabilities for various tasks",
-        tech: ["Python", "AI", "Voice Recognition", "API"],
-        status: "In development",
-        highlight: "VOICE"
+        highlight: "WINNER"
       }
     ],
     experienceAchievements: "Hackathons and Competitions",
@@ -341,18 +273,6 @@ export const translations = {
       {
         title: "\"Nuclear IT Hack\"",
         description: "Product analyst. Service for analyzing employee emotional state."
-      },
-      {
-        title: "NTI Olympiad",
-        description: "Participation in information technology olympiad"
-      },
-      {
-        title: "Cybersecurity Hackathon",
-        description: "Development of information security solutions"
-      },
-      {
-        title: "AI Hackathon Moscow",
-        description: "Creating AI solutions for real business problems"
       }
     ],
     education: "Education",
@@ -378,7 +298,7 @@ export const translations = {
         period: "2024"
       },
       {
-        institution: "IT conferences: RUCODE, Purple Conf, MTS True Tech Day, Yandex Conf",
+        institution: "Lectures at conferences: RUCODE, Purple Conf, MTS True Tech Day, Yandex Conf and others",
         period: "2023-2024"
       }
     ],
