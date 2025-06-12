@@ -17,7 +17,7 @@ export const translations = {
         tech: ["HTML", "CSS", "JavaScript", "AI/ML", "API Integration", "Mobile Responsive"],
         status: "25.12.2024 – 06.06.2025",
         highlight: "ОБРАЗОВАНИЕ",
-        link: "https://studysphere.volsh.org"
+        link: "https://github.com/dany-simonov/SS"
       },
       {
         title: "Стажировка в компании \"Спутникс\" (Технопарк Сколково)",
@@ -211,7 +211,7 @@ export const translations = {
         tech: ["HTML", "CSS", "JavaScript", "AI/ML", "API Integration", "Mobile Responsive"],
         status: "25.12.2024 – 06.06.2025",
         highlight: "EDUCATION",
-        link: "https://studysphere.volsh.org"
+        link: "https://github.com/dany-simonov/SS"
       },
       {
         title: "Internship at \"Sputniks\" Company (Skolkovo Technopark)",
