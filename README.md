@@ -7,6 +7,8 @@ Python-разработчик и аналитик данных из Москвы
 
 ## 🛠️ Навыки и технологии
 
+### 💻 Программирование и разработка
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![PyQt](https://img.shields.io/badge/PyQt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
@@ -21,10 +23,27 @@ Python-разработчик и аналитик данных из Москвы
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
+---
+
+### 🧰 Аналитика и визуализация
+
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=microsoftpowerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![Miro](https://img.shields.io/badge/Miro-1ABCFE?style=for-the-badge&logo=miro&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-
 ![Microsoft Office](https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoftoffice&logoColor=white)
+
+---
+
+### 📊 Аналитика и тестирование гипотез
+
+![Unit Economics](https://img.shields.io/badge/Unit_Economics-4CAF50?style=for-the-badge&logo=graph&logoColor=white)
+![Product Hypotheses](https://img.shields.io/badge/Product_Hypotheses-2196F3?style=for-the-badge&logo=idea&logoColor=white)
+![Metrics](https://img.shields.io/badge/Metrics-FFC107?style=for-the-badge&logo=data&logoColor=white)
+![Z-Test](https://img.shields.io/badge/Z-Test-673AB7?style=for-the-badge&logo=analytics&logoColor=white)
+![T-Test](https://img.shields.io/badge/T-Test-9C27B0?style=for-the-badge&logo=analytics&logoColor=white)
+![A/B Testing](https://img.shields.io/badge/A/B_Testing-E91E63?style=for-the-badge&logo=splitbee&logoColor=white)
+
 
 ---
 
