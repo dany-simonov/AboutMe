@@ -43,19 +43,6 @@ Python-разработчик и аналитик данных из Москвы
 ![T-Test](https://img.shields.io/badge/T-Test-9C27B0?style=for-the-badge&logo=analytics&logoColor=white)
 ![A/B Testing](https://img.shields.io/badge/A/B_Testing-E91E63?style=for-the-badge&logo=splitbee&logoColor=white)
 
-
----
-
-### Аналитика и тестирование гипотез
-
-![Unit Economics](https://img.shields.io/badge/Unit_Economics-4CAF50?style=for-the-badge&logo=graph&logoColor=white)
-![Product Hypotheses](https://img.shields.io/badge/Product_Hypotheses-2196F3?style=for-the-badge&logo=idea&logoColor=white)
-![Metrics](https://img.shields.io/badge/Metrics-FFC107?style=for-the-badge&logo=data&logoColor=white)
-![Z-Test](https://img.shields.io/badge/Z-Test-673AB7?style=for-the-badge&logo=analytics&logoColor=white)
-![T-Test](https://img.shields.io/badge/T-Test-9C27B0?style=for-the-badge&logo=analytics&logoColor=white)
-![A/B Testing](https://img.shields.io/badge/A/B_Testing-E91E63?style=for-the-badge&logo=splitbee&logoColor=white)
-
-
 ---
 
 ## 🚀 Основные проекты
