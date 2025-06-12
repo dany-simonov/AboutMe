@@ -4,7 +4,7 @@ export const translations = {
     name: "Даниил Симонов",
     age: "17 лет",
     location: "Москва, Россия",
-    description: "Fullstack-разработчик и аналитик данных с опытом создания веб-приложений и анализа бизнес-данных. Специализируюсь на Python, JavaScript и современных фреймворках.",
+    description: "Привет! Меня зовут Даня, и я увлечен миром технологий и анализа данных. Я стремлюсь применять свои знания в разработке интересных проектов и решении сложных задач. Мне нравится анализ данных, разработка веб-приложений, создание AI-ассистентов и многое другое. Я постоянно учусь новому и готов к совместной работе.",
     contact: "Связаться",
     skills: [
       "Python", "JavaScript", "React", "Flask", "Data Analysis", "Machine Learning", 
@@ -54,6 +54,20 @@ export const translations = {
         tech: ["Python", "AI", "React", "Database"],
         status: "MVP готов",
         highlight: "НОВЫЙ"
+      },
+      {
+        title: "План запуска проекта в Калифорнии",
+        description: "Анализ рынка общепита и разработка стратегии запуска бизнеса в Калифорнии",
+        tech: ["Python", "Data Analysis", "Market Research", "Business Strategy"],
+        status: "Завершено",
+        highlight: "БИЗНЕС"
+      },
+      {
+        title: "Voice Assistant Integration",
+        description: "Интеграция голосового помощника с возможностями AI для различных задач",
+        tech: ["Python", "AI", "Voice Recognition", "API"],
+        status: "В разработке",
+        highlight: "ГОЛОС"
       }
     ],
     experienceAchievements: "Хакатоны и олимпиады",
@@ -93,24 +107,44 @@ export const translations = {
       {
         title: "\"Nuclear IT Hack\"",
         description: "Продуктовый аналитик. Сервис анализа эмоционального состояния сотрудников."
+      },
+      {
+        title: "Олимпиада НТИ",
+        description: "Участие в олимпиаде по информационным технологиям"
+      },
+      {
+        title: "Хакатон по кибербезопасности",
+        description: "Разработка решений в области информационной безопасности"
+      },
+      {
+        title: "AI Hackathon Moscow",
+        description: "Создание AI-решений для реальных бизнес-задач"
       }
     ],
     education: "Образование",
     educationData: [
       {
-        institution: "ГБОУ Школа № 1571 — Углубленное изучение технологических дисциплин",
-        period: "2015-2025"
+        institution: "Школа № 2123 имени Мигеля Эрнандеса",
+        period: "11 класс, Математическая вертикаль Плюс"
       },
       {
-        institution: "ФКН ВШЭ — программы «Летняя и зимняя школа программной инженерии»",
+        institution: "Яндекс.Лицей",
+        period: "Промышленное программирование на Python"
+      },
+      {
+        institution: "Летняя школа по программной инженерии от ФКН НИУ ВШЭ",
         period: "2024"
       },
       {
-        institution: "IT-конференции: RUCODE, Purple Conf, MTS Tech Day, Яндекс Conf",
-        period: "2023-2024"
+        institution: "Мегаинтенсив по анализу данных от ЦНО ФКН",
+        period: "2024"
       },
       {
-        institution: "Курсы по Data Science и Machine Learning",
+        institution: "Зимняя школа по программной инженерии от ФКН НИУ ВШЭ",
+        period: "2024"
+      },
+      {
+        institution: "IT-конференции: RUCODE, Purple Conf, MTS True Tech Day, Яндекс Conf",
         period: "2023-2024"
       }
     ],
@@ -192,7 +226,7 @@ export const translations = {
     webDevelopment: "Веб-разработка",
     webDesign: "Веб-дизайн",
     letsConnect: "Давайте знакомиться!",
-    connectDescription: "Открыт для новых возможностей и интересных проектов. Свяжитесь со мной для обсуждения сотрудничества.",
+    connectDescription: "Если ты хочешь обсудить проект, дать совет, задать вопрос или просто поболтать, вот как со мной можно связаться:",
     contactCards: [
       { label: "Email", value: "dany.ssimon2007@yandex.ru" },
       { label: "Telegram", value: "@dany_simonov" },
@@ -204,7 +238,7 @@ export const translations = {
     name: "Daniil Simonov",
     age: "17 years old",
     location: "Moscow, Russia", 
-    description: "Full-stack developer and data analyst with experience in creating web applications and analyzing business data. I specialize in Python, JavaScript, and modern frameworks.",
+    description: "Hi! My name is Danya, and I'm passionate about the world of technology and data analysis. I strive to apply my knowledge in developing interesting projects and solving complex problems. I enjoy data analysis, web application development, creating AI assistants, and much more. I'm constantly learning new things and ready for collaboration.",
     contact: "Contact",
     skills: [
       "Python", "JavaScript", "React", "Flask", "Data Analysis", "Machine Learning",
@@ -254,6 +288,20 @@ export const translations = {
         tech: ["Python", "AI", "React", "Database"],
         status: "MVP ready",
         highlight: "NEW"
+      },
+      {
+        title: "California Project Launch Plan",
+        description: "Food service market analysis and business launch strategy development in California",
+        tech: ["Python", "Data Analysis", "Market Research", "Business Strategy"],
+        status: "Completed",
+        highlight: "BUSINESS"
+      },
+      {
+        title: "Voice Assistant Integration",
+        description: "Voice assistant integration with AI capabilities for various tasks",
+        tech: ["Python", "AI", "Voice Recognition", "API"],
+        status: "In development",
+        highlight: "VOICE"
       }
     ],
     experienceAchievements: "Hackathons and Competitions",
@@ -293,24 +341,44 @@ export const translations = {
       {
         title: "\"Nuclear IT Hack\"",
         description: "Product analyst. Service for analyzing employee emotional state."
+      },
+      {
+        title: "NTI Olympiad",
+        description: "Participation in information technology olympiad"
+      },
+      {
+        title: "Cybersecurity Hackathon",
+        description: "Development of information security solutions"
+      },
+      {
+        title: "AI Hackathon Moscow",
+        description: "Creating AI solutions for real business problems"
       }
     ],
     education: "Education",
     educationData: [
       {
-        institution: "School № 1571 — Advanced study of technological disciplines",
-        period: "2015-2025"
+        institution: "School № 2123 named after Miguel Hernandez",
+        period: "Grade 11, Mathematical Vertical Plus"
       },
       {
-        institution: "HSE FCS — Summer and Winter Software Engineering School programs",
+        institution: "Yandex.Lyceum",
+        period: "Industrial Python Programming"
+      },
+      {
+        institution: "Summer Software Engineering School HSE FCS",
         period: "2024"
       },
       {
-        institution: "IT conferences: RUCODE, Purple Conf, MTS Tech Day, Yandex Conf",
-        period: "2023-2024"
+        institution: "Data Analysis Mega-intensive by CNO FCS",
+        period: "2024"
       },
       {
-        institution: "Data Science and Machine Learning courses",
+        institution: "Winter Software Engineering School HSE FCS",
+        period: "2024"
+      },
+      {
+        institution: "IT conferences: RUCODE, Purple Conf, MTS True Tech Day, Yandex Conf",
         period: "2023-2024"
       }
     ],
@@ -392,7 +460,7 @@ export const translations = {
     webDevelopment: "Web Development",
     webDesign: "Web Design",
     letsConnect: "Let's Connect!",
-    connectDescription: "Open to new opportunities and interesting projects. Contact me to discuss collaboration.",
+    connectDescription: "If you want to discuss a project, give advice, ask a question, or just chat, here's how you can reach me:",
     contactCards: [
       { label: "Email", value: "dany.ssimon2007@yandex.ru" },
       { label: "Telegram", value: "@dany_simonov" },
