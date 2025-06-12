@@ -1,4 +1,3 @@
-
 export const translations = {
   ru: {
     name: "Даниил Симонов",
@@ -13,32 +12,32 @@ export const translations = {
     featuredProjects: "Избранные проекты",
     projects: [
       {
-        title: "Стадисфера",
-        description: "Платформа для анализа спортивной статистики с продвинутой аналитикой и визуализацией данных",
-        tech: ["Python", "Data Analysis", "Machine Learning", "Visualization"],
-        status: "Завершено",
-        highlight: "СПОРТ",
-        link: "https://github.com/dany-simonov"
+        title: "StudySphere",
+        description: "Образовательная платформа studysphere.volsh.org, включающая AI-ассистента на базе 13 нейросетей. Современный фронтенд на HTML, CSS, JavaScript с адаптивной версткой. Интеграция нейросетевых API для генерации и анализа текстов, создания изображений и работы с файлами. Гибкая настройка бота (язык, стиль, длина, креативность, история диалога). Разработана система квизов, учебник. Платформа бесплатна, поддерживает работу на мобильных устройствах, пользователи не ограничены в количестве запросов. Проект активно развивается.",
+        tech: ["HTML", "CSS", "JavaScript", "AI/ML", "API Integration", "Mobile Responsive"],
+        status: "25.12.2024 – 06.06.2025",
+        highlight: "ОБРАЗОВАНИЕ",
+        link: "https://studysphere.volsh.org"
       },
       {
-        title: "Стажировка в компании \"Спутникс\"",
-        description: "Работа в Технопарке Сколково над проектами в сфере космических технологий и анализа данных",
-        tech: ["Python", "Data Analysis", "Space Tech", "Analytics"],
-        status: "Завершено",
+        title: "Стажировка в компании \"Спутникс\" (Технопарк Сколково)",
+        description: "Участвовал в разных этапах разработки: программирование на XML-разметке, 3D-моделирование и печать деталей на фотополимерном 3D-принтере, веб-дизайн прототипа приложения в Figma, а также работа в центре управления полётами.",
+        tech: ["XML", "3D Modeling", "Figma", "Prototyping", "Space Tech"],
+        status: "01.08.2024 – 31.08.2024",
         highlight: "СКОЛКОВО"
       },
       {
-        title: "Shopping Copilot - AI-стилист для Wildberries",
-        description: "Умный помощник для подбора одежды с использованием искусственного интеллекта и анализа предпочтений",
+        title: "Shopping Copilot \"IT Purple Hack\" 2025",
+        description: "AI-powered Shopping Copilot — персональный стилист для Wildberries. Интеллектуальный помощник для подбора одежды и создания стильных образов, снижая когнитивную нагрузку при онлайн-шоппинге.",
         tech: ["Python", "AI/ML", "React", "Flask", "OpenAI API"],
         status: "Продакшн",
         highlight: "AI"
       },
       {
-        title: "Призёр XVI Международного школьного конкурса РЭШ",
-        description: "Достижение призового места в престижном международном конкурсе по экономике",
+        title: "Призёр XVI Международного школьного конкурса РЭШ по экономике",
+        description: "Организовано Российской экономической школой и ILoveEconomics.",
         tech: ["Economics", "Analysis", "Research", "Strategy"],
-        status: "Завершено",
+        status: "17.02.2025 – 03.05.2025",
         highlight: "ПРИЗЁР"
       }
     ],
@@ -88,7 +87,7 @@ export const translations = {
         period: "11 класс, Математическая вертикаль Плюс"
       },
       {
-        institution: "Яндекс.Лицей",
+        institution: "Яндекс Лицей",
         period: "Промышленное программирование на Python"
       },
       {
@@ -105,7 +104,7 @@ export const translations = {
       },
       {
         institution: "Лекции на конференциях: RUCODE, Purple Conf, MTS True Tech Day, Яндекс Conf и другие",
-        period: "2023-2024"
+        period: "2024-2025"
       }
     ],
     technicalSkills: "Технические навыки",
@@ -207,32 +206,32 @@ export const translations = {
     featuredProjects: "Featured Projects",
     projects: [
       {
-        title: "Stadisfera",
-        description: "Platform for sports statistics analysis with advanced analytics and data visualization",
-        tech: ["Python", "Data Analysis", "Machine Learning", "Visualization"],
-        status: "Completed",
-        highlight: "SPORTS",
-        link: "https://github.com/dany-simonov"
+        title: "StudySphere",
+        description: "Educational platform studysphere.volsh.org, featuring an AI assistant based on 13 neural networks. Modern frontend with HTML, CSS, JavaScript and responsive design. Integration of neural network APIs for text generation and analysis, image creation, and file processing. Flexible bot configuration (language, style, length, creativity, dialogue history). Developed quiz system and textbook. Platform is free, supports mobile devices, users have unlimited queries. Project is actively developing.",
+        tech: ["HTML", "CSS", "JavaScript", "AI/ML", "API Integration", "Mobile Responsive"],
+        status: "25.12.2024 – 06.06.2025",
+        highlight: "EDUCATION",
+        link: "https://studysphere.volsh.org"
       },
       {
-        title: "Internship at \"Sputniks\" Company",
-        description: "Work at Skolkovo Technopark on projects in space technology and data analysis",
-        tech: ["Python", "Data Analysis", "Space Tech", "Analytics"],
-        status: "Completed",
+        title: "Internship at \"Sputniks\" Company (Skolkovo Technopark)",
+        description: "Participated in various development stages: XML markup programming, 3D modeling and printing parts on photopolymer 3D printer, web design of application prototype in Figma, and work in the mission control center.",
+        tech: ["XML", "3D Modeling", "Figma", "Prototyping", "Space Tech"],
+        status: "01.08.2024 – 31.08.2024",
         highlight: "SKOLKOVO"
       },
       {
-        title: "Shopping Copilot - AI Stylist for Wildberries",
-        description: "Smart clothing recommendation assistant using artificial intelligence and preference analysis",
+        title: "Shopping Copilot \"IT Purple Hack\" 2025",
+        description: "AI-powered Shopping Copilot — personal stylist for Wildberries. Intelligent assistant for clothing selection and creating stylish outfits, reducing cognitive load during online shopping.",
         tech: ["Python", "AI/ML", "React", "Flask", "OpenAI API"],
         status: "Production",
         highlight: "AI"
       },
       {
         title: "NES XVI International School Competition Winner",
-        description: "Achievement of prize place in prestigious international economics competition",
+        description: "Organized by New Economic School and ILoveEconomics.",
         tech: ["Economics", "Analysis", "Research", "Strategy"],
-        status: "Completed",
+        status: "17.02.2025 – 03.05.2025",
         highlight: "WINNER"
       }
     ],
@@ -282,7 +281,7 @@ export const translations = {
         period: "Grade 11, Mathematical Vertical Plus"
       },
       {
-        institution: "Yandex.Lyceum",
+        institution: "Yandex Lyceum",
         period: "Industrial Python Programming"
       },
       {
@@ -299,7 +298,7 @@ export const translations = {
       },
       {
         institution: "Lectures at conferences: RUCODE, Purple Conf, MTS True Tech Day, Yandex Conf and others",
-        period: "2023-2024"
+        period: "2024-2025"
       }
     ],
     technicalSkills: "Technical Skills",
